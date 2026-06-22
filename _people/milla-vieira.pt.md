@@ -9,7 +9,7 @@ role: "Bolsista de Iniciação Científica (FAPERJ)"
 affiliation: "Curso de Graduação em Ciência Ambiental"
 affiliation_url: "https://cienciaambiental.sites.uff.br/"
 
-avatar: "/assets/img/people/milla-vieira2.jpg"
+avatar: "/assets/img/equipe/milla-vieira2.jpg"
 
 email: "millasantos@id.uff.br"
 github: "https://github.com/vvieiramilla"
@@ -39,7 +39,7 @@ Quando não tô na universidade, no O2 ou me envolvendo com esses projetos, é b
 ---
 
 <div align="center" style="margin-top: 50px;">
-  <img src="/assets/img/people/milla-trilha.jpg" alt="Milla na natureza" width="280" style="border-radius:8px;">
+  <img src="/assets/img/equipe/milla-trilha.jpg" alt="Milla na natureza" width="280" style="border-radius:8px;">
 </div>
 
 <div align="center">

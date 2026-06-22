@@ -9,7 +9,7 @@ role: "Mestranda no Programa de Pós-graduação em Dinâmica dos Oceanos e da T
 affiliation: "Universidade Federal Fluminense (UFF)"
 affiliation_url: "http://observatoriooceanografico.org/"
 
-avatar: "/assets/img/people/vanessa-peterka.jpg"
+avatar: "/assets/img/equipe/vanessa-peterka.jpg"
 
 email: "vanessapeterka@id.uff.br"
 orcid: "0009-0004-1030-8225"

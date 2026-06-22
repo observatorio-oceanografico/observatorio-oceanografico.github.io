@@ -9,7 +9,7 @@ role: "Engenheiro de Petróleo · Pesquisador de Pós-doutorado"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/bernardo-chede.jpg"
+avatar: "/assets/img/equipe/bernardo-chede.jpg"
 
 email: "bechede@id.uff.br"
 github: "https://github.com/bechedeuff"

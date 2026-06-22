@@ -9,7 +9,7 @@ role: "Extension Scholar - Ocean Literacy"
 affiliation: "Undergraduate Program in Environmental Science"
 affiliation_url: "https://cienciaambiental.sites.uff.br/"
 
-avatar: "/assets/img/people/thauana-fogos.jpg"
+avatar: "/assets/img/equipe/thauana-fogos.jpg"
 
 email: "thauana_fogos@id.uff.br"
 github: "https://github.com/thauanafogos"

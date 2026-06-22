@@ -9,12 +9,10 @@ role: "Bolsista de Extensão - Cultura Oceânica"
 affiliation: "Curso de Graduação em Ciência Ambiental"
 affiliation_url: "https://cienciaambiental.sites.uff.br/"
 
-avatar: "/assets/img/people/thauana-fogos.jpg"
+avatar: "/assets/img/equipe/thauana-fogos.jpg"
 
 email: "thauana_fogos@id.uff.br"
 github: "https://github.com/thauanafogos"
-github: ""
-orcid: ""
 lattes: "http://lattes.cnpq.br/9937519300238115"
 
 location: "São Gonçalo, RJ"

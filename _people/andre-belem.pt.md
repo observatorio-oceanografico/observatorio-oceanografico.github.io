@@ -9,7 +9,7 @@ role: "Oceanógrafo · Professor"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/andre-belem.jpg"
+avatar: "/assets/img/equipe/andre-belem.jpg"
 
 email: "andrebelem@id.uff.br"
 github: "https://github.com/andrebelem"

@@ -9,7 +9,7 @@ role: "Oceanographer · Doctoral Candidate"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/maria-fernanda.jpg"
+avatar: "/assets/img/equipe/maria-fernanda.jpg"
 
 email: "mfpalanch@id.uff.br"
 orcid: "0000-0002-8740-6972"

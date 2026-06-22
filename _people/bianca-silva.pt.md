@@ -9,7 +9,7 @@ role: "Bolsista de Extensão - Cultura Oceânica"
 affiliation: "Curso de Graduação em Geografia"
 affiliation_url: "https://geografia.sites.uff.br/"
 
-avatar: "/assets/img/people/bianca-silva.jpg"
+avatar: "/assets/img/equipe/bianca-silva.jpg"
 
 email: "biancasilva@id.uff.br"
 github: "https://github.com/biancasilva-cmd"

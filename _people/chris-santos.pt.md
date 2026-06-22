@@ -9,7 +9,7 @@ role: "Oceanógrafa · Aluna de doutorado"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/chris-santos.jpg"
+avatar: "/assets/img/equipe/chris-santos.jpg"
 
 email: "christianacs@id.uff.br"
 orcid: "0000-0003-1720-191X"

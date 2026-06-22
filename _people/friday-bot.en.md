@@ -9,7 +9,7 @@ role: "Friendly Robotic Interface Designed to Assist You"
 affiliation: "Oceanographic Observatory"
 affiliation_url: "https://observatoriooceanografico.org"
 
-avatar: "/assets/img/people/friday-bot.jpg"
+avatar: "/assets/img/equipe/friday-bot.jpg"
 
 email: "andrebelem@id.uff.br"
 github: "https://github.com/andrebelem"

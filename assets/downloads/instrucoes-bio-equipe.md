@@ -73,7 +73,7 @@ role: "Sua função (ex: Estudante de Doutorado · Oceanografia)"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/seu-nome.jpg"
+avatar: "/assets/img/equipe/seu-nome.jpg"
 
 email: "seuemail@id.uff.br"
 github: "https://github.com/seu-usuario"
@@ -96,7 +96,7 @@ slug: seu-nome
 | `order` | **NÃO altere.** Esse número controla a ordem de exibição da equipe no site e é definido pelo Prof. André. |
 | `email`, `github`, `orcid`, `lattes`, `scholar`, `scopus`, `medium` | Preencha com os seus dados. Se você não tiver algum desses perfis (ex: ainda não tem Lattes ou Scopus), **apague a linha inteira** — não deixe o campo vazio ou com `""`. |
 | `permalink` / `alt_lang` | Ajuste o final da URL para o seu nome (em minúsculas, sem acentos, com hífen entre palavras — ex: `/pessoas/joao-silva/`). Mantenha o mesmo padrão entre o `.pt.md` e o `.en.md`. |
-| `avatar` | Deve apontar para o caminho da sua foto dentro de `assets/img/people/` (veja o passo 4). |
+| `avatar` | Deve apontar para o caminho da sua foto dentro de `assets/img/equipe/` (veja o passo 4). |
 | `slug` | Mesmo valor usado no `permalink`, sem barras (ex: `joao-silva`). |
 
 ---
@@ -106,7 +106,7 @@ slug: seu-nome
 1. Escolha uma foto de boa qualidade (apresentável, em primeiro plano, de
    preferência formato quadrado ou retrato).
 2. Formatos aceitos: **`.jpg`** ou **`.png`**.
-3. No seu fork, navegue até a pasta `assets/img/people/`.
+3. No seu fork, navegue até a pasta `assets/img/equipe/`.
 4. Clique em **Add file → Upload files**.
 5. Arraste a foto do seu computador (ou clique para selecionar o arquivo).
 6. Use um nome de arquivo simples, sem espaços ou acentos, **antes** de
@@ -118,7 +118,7 @@ slug: seu-nome
    `avatar:` no cabeçalho, apontando para o caminho correto, por exemplo:
 
    ```yaml
-   avatar: "/assets/img/people/joao-silva.jpg"
+   avatar: "/assets/img/equipe/joao-silva.jpg"
    ```
 
 ---
@@ -201,7 +201,7 @@ Depois de salvar todas as alterações no seu fork:
 - [ ] `email`, `github`, `orcid` e demais campos preenchidos com seus dados
       reais (campos sem informação foram **removidos**, não deixados em branco)
 - [ ] `permalink`, `alt_lang` e `slug` seguem o mesmo padrão nos dois arquivos
-- [ ] Foto adicionada em `assets/img/people/` (`.jpg` ou `.png`)
+- [ ] Foto adicionada em `assets/img/equipe/` (`.jpg` ou `.png`)
 - [ ] Campo `avatar` aponta corretamente para o caminho da foto
 - [ ] Texto de apresentação escrito nos dois idiomas
 - [ ] Pull Request aberto a partir do seu fork
@@ -219,7 +219,7 @@ cd observatorio-oceanografico.github.io
 
 # edite seus arquivos normalmente no seu editor de preferência
 
-git add _people/seu-nome.pt.md _people/seu-nome.en.md assets/img/people/seu-nome.jpg
+git add _people/seu-nome.pt.md _people/seu-nome.en.md assets/img/equipe/seu-nome.jpg
 git commit -m "Adiciona bio de Seu Nome"
 git push origin main
 ```

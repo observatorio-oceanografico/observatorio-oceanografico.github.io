@@ -8,7 +8,7 @@ alt_lang: /pessoas/andre-belem/
 role: "Oceanographer · Associate Professor"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
-avatar: "/assets/img/people/andre-belem.jpg"
+avatar: "/assets/img/equipe/andre-belem.jpg"
 
 email: "andrebelem@id.uff.br"
 github: "https://github.com/andrebelem"

@@ -8,7 +8,7 @@ alt_lang: /pessoas/gabriel-schimidel/
 role: "Undergraduate Research Fellow (CNPq)"
 affiliation: "Undergraduate Program in Water Resources and Environmental Engineering"
 
-avatar: "/assets/img/people/gabriel-schimidel.jpg"
+avatar: "/assets/img/equipe/gabriel-schimidel.jpg"
 
 email: "gabrielschimidel@id.uff.br"
 github: "https://github.com/Schimidel"

@@ -9,7 +9,7 @@ role: "Anthropologist · MSc Student"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/mateus-sayao.jpg"
+avatar: "/assets/img/equipe/mateus-sayao.jpg"
 
 email: "mateussayao@id.uff.br"
 orcid: "0009-0009-8303-3310"

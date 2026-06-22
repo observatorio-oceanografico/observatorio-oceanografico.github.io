@@ -9,7 +9,7 @@ role: "MSc Candidate in the Graduate Program in Ocean and Earth Dynamics"
 affiliation: "Fluminense Federal University (UFF)"
 affiliation_url: "http://observatoriooceanografico.org/"
 
-avatar: "/assets/img/people/vanessa-peterka.jpg"
+avatar: "/assets/img/equipe/vanessa-peterka.jpg"
 
 email: "vanessapeterka@id.uff.br"
 orcid: "0009-0004-1030-8225"

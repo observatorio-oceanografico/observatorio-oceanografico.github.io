@@ -9,7 +9,7 @@ role: "Extension Scholar - Ocean Literacy"
 affiliation: "Undergraduate Program in Geography"
 affiliation_url: "https://geografia.sites.uff.br/"
 
-avatar: "/assets/img/people/bianca-silva.jpg"
+avatar: "/assets/img/equipe/bianca-silva.jpg"
 
 email: "biancasilva@id.uff.br"
 github: "https://github.com/biancasilva-cmd"

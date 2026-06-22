@@ -9,7 +9,7 @@ role: "Oceanographer · Doctorate Student"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/chris-santos.jpg"
+avatar: "/assets/img/equipe/chris-santos.jpg"
 
 email: "christianacs@id.uff.br"
 orcid: "0000-0003-1720-191X"

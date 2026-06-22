@@ -9,7 +9,7 @@ role: "Undergraduate Research Fellow (FAPERJ)"
 affiliation: "Undergraduate Program in Environmental Science"
 affiliation_url: "https://cienciaambiental.sites.uff.br/"
 
-avatar: "/assets/img/people/milla-vieira2.jpg"
+avatar: "/assets/img/equipe/milla-vieira2.jpg"
 
 email: "millasantos@id.uff.br"
 github: "https://github.com/vvieiramilla"
@@ -38,7 +38,7 @@ When I'm not at the university, at O2, or involved in these projects, you'll lik
 ---
 
 <div align="center" style="margin-top: 50px;">
-  <img src="/assets/img/people/milla-trilha.jpg" alt="Milla in nature" width="280" style="border-radius:8px;">
+  <img src="/assets/img/equipe/milla-trilha.jpg" alt="Milla in nature" width="280" style="border-radius:8px;">
 </div>
 
 <div align="center">

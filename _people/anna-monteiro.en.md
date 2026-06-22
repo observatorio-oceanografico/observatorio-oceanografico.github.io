@@ -8,7 +8,7 @@ alt_lang: /pessoas/anna-monteiro/
 role: "Undergaduation Student"
 affiliation: "Undergraduate Program in Water Resources and Environmental Engineering"
 
-avatar: "/assets/img/people/anna-monteiro.jpg"
+avatar: "/assets/img/equipe/anna-monteiro.jpg"
 
 email: "anna_monteiro@id.uff.br"
 github: "https://github.com/annacomonteiro"

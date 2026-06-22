@@ -30,7 +30,7 @@ affiliation: "AFFILIATION HERE"
 affiliation_url: "https://example.com/"
 
 # Caminho para a foto (imagem quadrada 1:1, formato JPG ou PNG)
-avatar: "/assets/img/people/your-photo.jpg"
+avatar: "/assets/img/equipe/your-photo.jpg"
 
 # Contato institucional (opcional)
 email: "your.email@institution.edu"

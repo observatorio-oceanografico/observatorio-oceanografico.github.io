@@ -9,7 +9,7 @@ role: "Antropólogo · Mestrando"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/mateus-sayao.jpg"
+avatar: "/assets/img/equipe/mateus-sayao.jpg"
 
 email: "mateussayao@id.uff.br"
 orcid: "0009-0009-8303-3310"

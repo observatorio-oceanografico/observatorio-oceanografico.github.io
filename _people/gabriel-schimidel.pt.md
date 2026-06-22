@@ -8,7 +8,7 @@ alt_lang: /people/gabriel-schimidel/
 role: "Bolsista de Iniciação Científica (CNPq)"
 affiliation: "Curso de Graduação em Engenharia de Recursos Hídricos e Meio Ambiente"
 
-avatar: "/assets/img/people/gabriel-schimidel.jpg"
+avatar: "/assets/img/equipe/gabriel-schimidel.jpg"
 
 email: "gabrielschimidel@id.uff.br"
 github: "https://github.com/Schimidel"

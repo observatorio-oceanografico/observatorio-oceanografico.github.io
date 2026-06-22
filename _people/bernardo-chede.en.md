@@ -9,7 +9,7 @@ role: "Petroleum Engineering · Postdoctoral Researcher"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/people/bernardo-chede.jpg"
+avatar: "/assets/img/equipe/bernardo-chede.jpg"
 
 email: "bechede@id.uff.br"
 github: "https://github.com/bechedeuff"

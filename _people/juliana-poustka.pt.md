@@ -8,7 +8,7 @@ alt_lang: /people/juliana-poustka/
 role: "Bolsista de Iniciação Científica (FEC)"
 affiliation: "Curso de Graduação em Ciência da Computação"
 
-avatar: "/assets/img/people/juliana-poustka.jpg"
+avatar: "/assets/img/equipe/juliana-poustka.jpg"
 
 email: "julianapoustka@id.uff.br"
 github: "https://github.com/julianaalves-p"
