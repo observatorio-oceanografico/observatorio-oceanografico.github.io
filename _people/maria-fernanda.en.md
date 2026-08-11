@@ -5,7 +5,7 @@ lang: en
 permalink: /people/maria-fernanda/
 alt_lang: /pessoas/maria-fernanda/
 
-role: "Oceanographer · Doctoral Candidate"
+role: "Oceanographer · Ph.D."
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 

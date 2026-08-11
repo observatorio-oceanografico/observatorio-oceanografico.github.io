@@ -5,7 +5,7 @@ lang: pt
 permalink: /pessoas/maria-fernanda/
 alt_lang: /people/maria-fernanda/
 
-role: "Oceanógrafa · Doutoranda"
+role: "Oceanógrafa · D.Sc."
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
