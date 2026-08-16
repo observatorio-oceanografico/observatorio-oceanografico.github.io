@@ -9,7 +9,7 @@ role: "Bolsista de Pesquisa de Graduação (CNPq - Iniciação Tecnológica)"
 affiliation: "Universidade Federal Fluminense (UFF) - Engenharia Agrícola e Ambiental"
 affiliation_url: "http://ter.sites.uff.br/"
 
-avatar: "/assets/img/equipe/silas-junior.jpg"
+avatar: "/assets/img/equipe/Silas-Junior.jpg"
 
 email: "silasjunior@id.uff.br"
 github: "https://github.com/silasfljr"

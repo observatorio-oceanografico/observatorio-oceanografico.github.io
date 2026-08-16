@@ -1,0 +1,53 @@
+# =============================================================
+# CLASSIFICAÇÃO PROVISÓRIA — página experimental /pessoas-beta/
+# =============================================================
+#
+# Este arquivo NÃO faz parte do schema de _people/. É uma camada
+# adicional, só usada pela página experimental de Pessoas, para
+# testar uma organização visual por grupos sem alterar o front
+# matter dos perfis existentes.
+#
+# Chave  = valor do campo `slug` em _people/<slug>.pt.md / .en.md
+# Valor  = grupo experimental, um de:
+#   andre           — André Belém
+#   friday          — F.R.I.D.A.Y.
+#   colaboradores   — colaboradores/parceiros externos ao O2/UFF
+#   pesquisadores   — pesquisadores, pós-doutorado e pós-graduação
+#                      (doutorado/mestrado)
+#   estudantes      — graduação / iniciação científica
+#   extensao        — bolsistas de extensão, cultura oceânica e
+#                      difusão/comunicação científica
+#
+# Critério usado nesta primeira rodada (heurístico, não oficial):
+# combinação de `role` + `affiliation` de cada perfil em _people/.
+# Quem não aparecer aqui cai automaticamente na seção "Outros"
+# da página experimental, para nunca desaparecer silenciosamente.
+#
+# Isso é experimental e deve ser revisto quando (e se) o schema de
+# _people/ ganhar um campo oficial de grupo/categoria/vínculo.
+
+andre-belem: andre
+friday-bot: friday
+
+jaqueline-rapagna: colaboradores
+
+luciano-rapagna: pesquisadores
+bernardo-chede: pesquisadores
+maria-fernanda: pesquisadores
+chris-santos: pesquisadores
+mateus-sayao: pesquisadores
+vanessa-peterka: pesquisadores
+
+gabriel-schimidel: estudantes
+anna-monteiro: estudantes
+silas-junior: estudantes
+juliana-poustka: estudantes
+milla-vieira: estudantes
+yan-antunes: estudantes
+rian-gouveia: estudantes
+
+kathelly-victoria: extensao
+giuliana-martins: extensao
+sofia-feitosa: extensao
+bianca-silva: extensao
+thauana-fogos: extensao

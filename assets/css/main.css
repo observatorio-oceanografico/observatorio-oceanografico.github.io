@@ -595,6 +595,127 @@ body.internal .content h2 {
 }
 
 /* =========================================================
+   PESSOAS — VERSÃO EXPERIMENTAL (/pessoas-beta/, /en/people-beta/)
+   Namespace isolado (.people-beta-*): não reaproveita nem altera
+   as regras .team-* usadas pela página oficial de Equipe.
+   ========================================================= */
+
+.people-beta-tag {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.55;
+  vertical-align: middle;
+}
+
+.people-beta-intro {
+  max-width: 640px;
+  margin: 0.5rem 0 2.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.people-beta-section {
+  margin-top: 3rem;
+}
+
+.people-beta-section:first-child {
+  margin-top: 0.5rem;
+}
+
+/* Respiro extra antes de grupos com peso visual próprio
+   (ex.: Colaboradores logo após André/FRIDAY) — apenas espaçamento,
+   sem cor, borda ou tamanho de card diferente. */
+.people-beta-section--spaced {
+  margin-top: 5.5rem;
+}
+
+.people-beta-group-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.5;
+  margin: 0 0 1.25rem 0;
+  text-align: center;
+}
+
+/* Flexbox em vez de grid: permite centralizar a linha inteira mesmo
+   quando ela não está cheia (poucos cards, ou última linha "órfã"
+   de uma seção com mais gente) — algo que grid + justify-content
+   sozinho não resolve por linha. flex-basis reproduz a mesma largura
+   mínima de card que o grid usava (180px / 140px no mobile); os
+   cards não crescem além dela, então o tamanho não muda. */
+.people-beta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.people-beta-card {
+  flex: 0 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.people-beta-avatar {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.people-beta-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.people-beta-name {
+  font-size: 1rem;
+}
+
+.people-beta-role {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.people-beta-affiliation {
+  font-size: 0.72rem;
+  opacity: 0.55;
+}
+
+.people-beta-card:hover .people-beta-name {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .people-beta-grid {
+    gap: 1.5rem;
+  }
+
+  .people-beta-card {
+    flex-basis: 140px;
+  }
+
+  .people-beta-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+  }
+}
+
+/* =========================================================
    LINKS – CONTRASTE EM FUNDO ESCURO
    ========================================================= */
 

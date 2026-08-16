@@ -1,0 +1,25 @@
+{% comment %}
+  Seção de grupo — página experimental /pessoas-beta/ e /en/people-beta/.
+  A organização é comunicada só por posição vertical, espaçamento e
+  título discreto — os cards dentro da seção são idênticos aos de
+  qualquer outra seção.
+
+  Parâmetros:
+    include.people   — array já filtrado de pessoas para esta seção
+    include.title     — título discreto do grupo (opcional; omitir
+                         para seções "sem rótulo", como André/FRIDAY)
+    include.spaced    — "true" para dar respiro visual extra antes
+                         da seção (usado antes de Colaboradores)
+{% endcomment %}
+{% if include.people.size > 0 %}
+<section class="people-beta-section{% if include.spaced == 'true' %} people-beta-section--spaced{% endif %}">
+  {% if include.title %}
+    <h2 class="people-beta-group-title">{{ include.title }}</h2>
+  {% endif %}
+  <div class="people-beta-grid">
+    {% for person in include.people %}
+      {% include people-beta-card.html person=person %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

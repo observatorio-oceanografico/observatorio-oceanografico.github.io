@@ -1,0 +1,27 @@
+{% comment %}
+  Card de pessoa — página experimental /pessoas-beta/ e /en/people-beta/.
+  Todos os cards usam exatamente o mesmo markup e as mesmas classes,
+  independentemente do grupo em que a pessoa aparece.
+
+  Parâmetro:
+    include.person — documento da coleção site.people
+{% endcomment %}
+<a href="{{ site.baseurl }}{{ include.person.permalink }}" class="people-beta-card">
+  <img
+    src="{{ site.baseurl }}{{ include.person.avatar }}"
+    alt="{{ include.person.title }}"
+    class="people-beta-avatar"
+    loading="lazy"
+  >
+  <div class="people-beta-meta">
+    <strong class="people-beta-name">{{ include.person.title }}</strong>
+
+    {% if include.person.role %}
+      <span class="people-beta-role">{{ include.person.role }}</span>
+    {% endif %}
+
+    {% if include.person.affiliation %}
+      <span class="people-beta-affiliation">{{ include.person.affiliation }}</span>
+    {% endif %}
+  </div>
+</a>
