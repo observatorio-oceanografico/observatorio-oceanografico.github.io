@@ -1,0 +1,25 @@
+{
+  "submission_type": "person",
+  "language": "pt",
+  "name": "sfsdf",
+  "role": "fsdfds",
+  "institution": "fsdf",
+  "areas": [
+    "sfsdf"
+  ],
+  "links": {
+    "email": "sfdfs@fsdfsd.dsfsdf",
+    "lattes": "",
+    "orcid": "",
+    "github": "",
+    "linkedin": ""
+  },
+  "profile_markdown": "sfdsdfs",
+  "photo": {
+    "filename": "sfsdf.png",
+    "mime_type": "image/png",
+    "width": 800,
+    "height": 800,
+    "size_bytes": 627963
+  }
+}
