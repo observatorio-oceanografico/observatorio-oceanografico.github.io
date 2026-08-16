@@ -1,31 +1,31 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notícias — Portal de Submissões do O2</title>
-  <meta name="description" content="Envie uma notícia para o Observatório Oceanográfico." />
+  <title>NotÃ­cias â€” Portal de SubmissÃµes do O2</title>
+  <meta name="description" content="Envie uma notÃ­cia para o ObservatÃ³rio OceanogrÃ¡fico." />
   <link rel="stylesheet" href="join.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand__logo-link" href="index.html" aria-label="Observatório Oceanográfico — página inicial">
-        <img class="brand__logo" src="assets/O2_logo_branco.png" alt="Observatório Oceanográfico" />
+      <a class="brand__logo-link" href="index.html" aria-label="ObservatÃ³rio OceanogrÃ¡fico â€” pÃ¡gina inicial">
+        <img class="brand__logo" src="assets/O2_logo_branco.png" alt="ObservatÃ³rio OceanogrÃ¡fico" />
       </a>
       <div class="brand">
-        <p class="brand__title">Observatório Oceanográfico</p>
-        <p class="brand__tagline">Portal de Submissões do O2</p>
+        <p class="brand__title">ObservatÃ³rio OceanogrÃ¡fico</p>
+        <p class="brand__tagline">Portal de SubmissÃµes do O2</p>
       </div>
     </div>
   </header>
 
-  <nav class="module-bar" aria-label="Navegação do portal">
+  <nav class="module-bar" aria-label="NavegaÃ§Ã£o do portal">
     <div class="module-bar__inner">
-      <a class="module-bar__back" href="index.html">← Portal O2</a>
+      <a class="module-bar__back" href="index.html">â† Portal O2</a>
       <span class="module-bar__sep" aria-hidden="true">/</span>
-      <span class="module-bar__current">Notícias</span>
+      <span class="module-bar__current">NotÃ­cias</span>
     </div>
   </nav>
 
@@ -33,13 +33,13 @@
 
     <!-- ============================= FORM ============================= -->
     <section class="form-panel" aria-labelledby="form-heading">
-      <h1 id="form-heading">Notícia do Observatório Oceanográfico</h1>
+      <h1 id="form-heading">NotÃ­cia do ObservatÃ³rio OceanogrÃ¡fico</h1>
       <p class="form-intro">
-        Antes de preencher este formulário, converse com André Belem
-        (andrebelem@id.uff.br), curador do Observatório Oceanográfico.
+        Antes de preencher este formulÃ¡rio, converse com AndrÃ© Belem
+        (andrebelem@id.uff.br), curador do ObservatÃ³rio OceanogrÃ¡fico.
       </p>
       <p class="form-intro">
-        O conteúdo pode ser escrito em Markdown simples. Se precisar de
+        O conteÃºdo pode ser escrito em Markdown simples. Se precisar de
         ajuda, consulte este guia:
         <a href="https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open">https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open</a>
       </p>
@@ -53,14 +53,14 @@
 
         <!-- ---------- Language ---------- -->
         <fieldset class="form-section">
-          <legend>Idioma desta submissão</legend>
+          <legend>Idioma desta submissÃ£o</legend>
           <p class="section-help">
-            Escreva a notícia em apenas um idioma. A segunda versão (PT ou
-            EN) é produzida depois pela equipe de curadoria.
+            Escreva a notÃ­cia em apenas um idioma. A segunda versÃ£o (PT ou
+            EN) Ã© produzida depois pela equipe de curadoria.
           </p>
-          <div class="lang-radio-group" role="radiogroup" aria-label="Idioma desta submissão">
+          <div class="lang-radio-group" role="radiogroup" aria-label="Idioma desta submissÃ£o">
             <input type="radio" id="language-pt" name="language" value="pt" checked />
-            <label for="language-pt" class="lang-radio__btn">Português</label>
+            <label for="language-pt" class="lang-radio__btn">PortuguÃªs</label>
             <input type="radio" id="language-en" name="language" value="en" />
             <label for="language-en" class="lang-radio__btn">English</label>
           </div>
@@ -68,10 +68,10 @@
 
         <!-- ---------- Basics ---------- -->
         <fieldset class="form-section">
-          <legend>Dados da notícia</legend>
+          <legend>Dados da notÃ­cia</legend>
 
           <div class="field">
-            <label for="title">Título <span class="required" aria-hidden="true">*</span></label>
+            <label for="title">TÃ­tulo <span class="required" aria-hidden="true">*</span></label>
             <input type="text" id="title" name="title" required
                    aria-describedby="title-error" />
             <p id="title-error" class="field-error" aria-live="polite"></p>
@@ -82,7 +82,7 @@
             <input type="date" id="date" name="date" required
                    aria-describedby="date-help date-error" />
             <p id="date-help" class="field-help">
-              Data da notícia ou do evento — não precisa ser a data de hoje.
+              Data da notÃ­cia ou do evento â€” nÃ£o precisa ser a data de hoje.
             </p>
             <p id="date-error" class="field-error" aria-live="polite"></p>
           </div>
@@ -92,7 +92,7 @@
             <textarea id="excerpt" name="excerpt" rows="3" required
                       aria-describedby="excerpt-help excerpt-error"></textarea>
             <p id="excerpt-help" class="field-help">
-              Texto curto, usado em listagens e cards da notícia.
+              Texto curto, usado em listagens e cards da notÃ­cia.
             </p>
             <p id="excerpt-error" class="field-error" aria-live="polite"></p>
           </div>
@@ -109,7 +109,7 @@
               <input type="text" id="tagInput" placeholder="Digite uma tag e pressione Enter"
                      aria-describedby="tags-help" />
             </div>
-            <p id="tags-help" class="field-help">Opcional. Pressione Enter ou vírgula para adicionar. Clique no × para remover.</p>
+            <p id="tags-help" class="field-help">Opcional. Pressione Enter ou vÃ­rgula para adicionar. Clique no Ã— para remover.</p>
           </div>
         </fieldset>
 
@@ -127,10 +127,10 @@
               aria-describedby="image-help image-error"
             />
             <p id="image-help" class="field-help">
-              Opcional. JPG, PNG ou WEBP, até 8&nbsp;MB. A imagem é
+              Opcional. JPG, PNG ou WEBP, atÃ© 8&nbsp;MB. A imagem Ã©
               processada inteiramente no seu navegador: redimensionada
-              quando necessário e convertida para JPEG, sem recorte —
-              todo o conteúdo da imagem é preservado.
+              quando necessÃ¡rio e convertida para JPEG, sem recorte â€”
+              todo o conteÃºdo da imagem Ã© preservado.
             </p>
             <p id="image-error" class="field-error" aria-live="polite"></p>
 
@@ -145,43 +145,43 @@
 
         <!-- ---------- Content ---------- -->
         <fieldset class="form-section">
-          <legend>Conteúdo da notícia</legend>
+          <legend>ConteÃºdo da notÃ­cia</legend>
 
           <div class="field">
-            <label for="contentMarkdown">Conteúdo em Markdown <span class="required" aria-hidden="true">*</span></label>
+            <label for="contentMarkdown">ConteÃºdo em Markdown <span class="required" aria-hidden="true">*</span></label>
             <textarea id="contentMarkdown" name="contentMarkdown" rows="12" required
                       aria-describedby="contentMarkdown-help contentMarkdown-error"></textarea>
             <p id="contentMarkdown-help" class="field-help">
-              Markdown simples é aceito: <code>##</code> para subtítulos,
+              Markdown simples Ã© aceito: <code>##</code> para subtÃ­tulos,
               <code>-</code> para listas, <code>**negrito**</code>,
-              <code>*itálico*</code> e <code>[texto](https://link)</code>
-              para links. HTML digitado aqui não é interpretado — aparece
+              <code>*itÃ¡lico*</code> e <code>[texto](https://link)</code>
+              para links. HTML digitado aqui nÃ£o Ã© interpretado â€” aparece
               como texto puro.
             </p>
             <p id="contentMarkdown-error" class="field-error" aria-live="polite"></p>
           </div>
 
           <div class="field">
-            <p class="field-help">Prévia</p>
+            <p class="field-help">PrÃ©via</p>
             <div id="markdown-live-preview" class="markdown-live-preview markdown-body" aria-live="polite"></div>
           </div>
         </fieldset>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn--primary">Preparar submissão</button>
-          <button type="reset" class="btn btn--ghost">Limpar formulário</button>
+          <button type="submit" class="btn btn--primary">Preparar submissÃ£o</button>
+          <button type="reset" class="btn btn--ghost">Limpar formulÃ¡rio</button>
         </div>
         <p id="submit-status" class="submit-status" aria-live="polite"></p>
 
         <div id="result-panel" class="result-panel" hidden>
           <h2>Dados gerados</h2>
           <p class="section-help">
-            Este é o payload desta submissão, já enviado ao servidor (veja o
+            Este Ã© o payload desta submissÃ£o, jÃ¡ enviado ao servidor (veja o
             status acima). Campos de curadoria (slug, filename final,
             layout, permalink, alt_lang, ordem, nome final da imagem,
-            caminho no site etc.) não fazem parte deste formulário — são
-            definidos depois pela equipe de curadoria. Os botões abaixo
-            baixam o JSON e a imagem processada apenas para conferência
+            caminho no site etc.) nÃ£o fazem parte deste formulÃ¡rio â€” sÃ£o
+            definidos depois pela equipe de curadoria. Os botÃµes abaixo
+            baixam o JSON e a imagem processada apenas para conferÃªncia
             local.
           </p>
           <pre id="result-json" class="result-json" tabindex="0"></pre>
@@ -197,26 +197,26 @@
     <aside class="preview-panel" aria-labelledby="preview-heading">
       <div class="preview-panel__sticky">
         <div class="preview-panel__head">
-          <h2 id="preview-heading">Prévia em tempo real</h2>
-          <span class="lang-flag" id="preview-lang-badge" aria-label="Idioma desta submissão">PT</span>
+          <h2 id="preview-heading">PrÃ©via em tempo real</h2>
+          <span class="lang-flag" id="preview-lang-badge" aria-label="Idioma desta submissÃ£o">PT</span>
         </div>
 
-        <p class="section-help">Renderização aproximada do seu registro na página de notícias do Observatório Oceanográfico.</p>
+        <p class="section-help">RenderizaÃ§Ã£o aproximada do seu registro na pÃ¡gina de notÃ­cias do ObservatÃ³rio OceanogrÃ¡fico.</p>
 
-        <article class="news-card" id="news-card" aria-label="Prévia da notícia">
+        <article class="news-card" id="news-card" aria-label="PrÃ©via da notÃ­cia">
           <div class="media-frame news-card__image-frame" id="news-card-image-frame">
             <img id="preview-image" src="" alt="" hidden />
             <div id="preview-image-fallback" class="media-frame__fallback" aria-hidden="true">Sem imagem</div>
           </div>
 
           <p class="news-card__date" id="preview-date">Data</p>
-          <h3 class="news-card__title" id="preview-title">Título da notícia</h3>
-          <p class="news-card__excerpt" id="preview-excerpt">O resumo aparecerá aqui.</p>
+          <h3 class="news-card__title" id="preview-title">TÃ­tulo da notÃ­cia</h3>
+          <p class="news-card__excerpt" id="preview-excerpt">O resumo aparecerÃ¡ aqui.</p>
 
           <div class="team-card__tags" id="preview-tags" aria-label="Tags"></div>
 
           <div class="news-card__content markdown-body" id="preview-markdown">
-            <p class="team-card__placeholder">O conteúdo em Markdown aparecerá aqui.</p>
+            <p class="team-card__placeholder">O conteÃºdo em Markdown aparecerÃ¡ aqui.</p>
           </div>
         </article>
       </div>
@@ -225,9 +225,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>Portal de Submissões do O2 — protótipo de frontend. Não conectado à produção.</p>
+    <p>Portal de SubmissÃµes do O2 â€” protÃ³tipo de frontend. NÃ£o conectado Ã  produÃ§Ã£o.</p>
   </footer>
 
   <script src="noticias.js"></script>
 </body>
 </html>
+
