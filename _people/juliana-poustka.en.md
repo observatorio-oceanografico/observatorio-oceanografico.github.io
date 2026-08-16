@@ -8,7 +8,7 @@ alt_lang: /pessoas/juliana-poustka/
 role: "Undergraduate Research Fellow (FEC)"
 affiliation: "Undergraduate Program in Computational Science"
 
-avatar: "/assets/img/equipe/Juliana-Poustka.jpg"
+avatar: "/assets/img/equipe/juliana-poustka.jpg"
 
 email: "julianapoustka@id.uff.br"
 github: "https://github.com/julianaalves-p"

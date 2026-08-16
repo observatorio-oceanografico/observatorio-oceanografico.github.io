@@ -9,7 +9,7 @@ role: "Bolsista de Iniciação Científica - INCT ReNOMO"
 affiliation: "Observatório Oceanográfico"
 affiliation_url: "https://observatoriooceanografico.org"
 
-avatar: "/assets/img/equipe/Yan-Antunes.jpg"
+avatar: "/assets/img/equipe/yan-antunes.jpg"
 
 email: "yan_abreu@id.uff.br"
 lattes: "https://lattes.cnpq.br/4724855101536474"

@@ -9,7 +9,7 @@ role: "Scientific Initiation Fellow - INCT ReNOMO"
 affiliation: "Oceanographic Observatory"
 affiliation_url: "https://observatoriooceanografico.org"
 
-avatar: "/assets/img/equipe/RianFotoPerfil.jpeg"
+avatar: "/assets/img/equipe/rianfotoperfil.jpeg"
 
 email: riangouveia@id.uff.br
 lattes: http://lattes.cnpq.br/5311279295283100

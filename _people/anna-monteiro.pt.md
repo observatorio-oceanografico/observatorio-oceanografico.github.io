@@ -8,7 +8,7 @@ alt_lang: /people/anna-monteiro/
 role: "Aluna de Graduação (Trabalho de conclusão de Curso)"
 affiliation: "Curso de Graduação em Engenharia de Recursos Hídricos e Meio Ambiente"
 
-avatar: "/assets/img/equipe/Anna-Monteiro.jpg"
+avatar: "/assets/img/equipe/anna-monteiro.jpg"
 
 email: "anna_monteiro@id.uff.br"
 github: "https://github.com/annacomonteiro"

@@ -9,7 +9,7 @@ role: "Bolsista de Apoio a Difusão Cultural - CNPq"
 affiliation: "Observatório Oceanográfico"
 affiliation_url: "https://observatoriooceanografico.org"
 
-avatar: "/assets/img/equipe/Giuliana-Martins.jpeg"
+avatar: "/assets/img/equipe/giuliana-martins.jpeg"
 
 email: "giulianamartins@id.uff.br"
 lattes: "http://lattes.cnpq.br/5143898587762768"

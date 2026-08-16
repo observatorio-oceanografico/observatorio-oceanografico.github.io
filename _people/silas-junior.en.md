@@ -9,7 +9,7 @@ role: "Undergraduate Research Fellow (CNPq – Technological Development)"
 affiliation: "Fluminense Federal University (UFF) — Agricultural and Environmental Engineering"
 affiliation_url: "http://ter.sites.uff.br/"
 
-avatar: "/assets/img/equipe/Silas-Junior.jpg"
+avatar: "/assets/img/equipe/silas-junior.jpg"
 
 email: "silasjunior@id.uff.br"
 github: "https://github.com/silasfljr"

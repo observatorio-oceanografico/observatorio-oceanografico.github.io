@@ -9,7 +9,7 @@ role: "CNPq Cultural Dissemination Support Fellow"
 affiliation: "Oceanographic Observatory"
 affiliation_url: "https://observatoriooceanografico.org"
 
-avatar: "/assets/img/equipe/Kathelly-Victoria.jpg"
+avatar: "/assets/img/equipe/kathelly-victoria.jpg"
 
 email: "kathellyvictoria@id.uff.br"
 lattes: "http://lattes.cnpq.br/8085307502338455"
