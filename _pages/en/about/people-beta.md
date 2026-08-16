@@ -22,22 +22,44 @@ alt_lang: /pessoas-beta/
 {% assign friday = people | where_exp: "p", "groups[p.slug] == 'friday'" %}
 {% assign featured = andre | concat: friday %}
 
-{% assign collaborators = people | where_exp: "p", "groups[p.slug] == 'colaboradores'" %}
+{% comment %}
+  "Senior researchers and collaborators" group: curatorial order
+  (senior_order), not the profile's `order`. senior_order entries
+  without a matching profile (e.g. Jonas, no profile yet) are simply
+  skipped — no empty card is created.
+{% endcomment %}
+{% assign senior_all = people | where_exp: "p", "groups[p.slug] == 'senior'" %}
+{% assign senior = "" | split: "" %}
+{% for senior_slug in site.data.people_groups_beta.senior_order %}
+  {% assign senior_match = senior_all | where: "slug", senior_slug %}
+  {% assign senior = senior | concat: senior_match %}
+{% endfor %}
+
 {% assign researchers = people | where_exp: "p", "groups[p.slug] == 'pesquisadores'" %}
 {% assign students = people | where_exp: "p", "groups[p.slug] == 'estudantes'" %}
 {% assign outreach = people | where_exp: "p", "groups[p.slug] == 'extensao'" %}
 {% assign others = people | where_exp: "p", "groups[p.slug] == nil" %}
 
 {% include people-beta-section.html people=featured %}
-{% include people-beta-section.html people=collaborators title="Collaborators" spaced="true" %}
-{% include people-beta-section.html people=researchers title="Researchers / Graduate Students" spaced="true" %}
+{% include people-beta-section.html people=senior title="Senior researchers and collaborators" spaced="true" %}
+{% include people-beta-section.html people=researchers title="Researchers and graduate students" spaced="true" %}
 {% include people-beta-section.html people=students title="Students" %}
-{% include people-beta-section.html people=outreach title="Outreach / Communication" %}
+{% include people-beta-section.html people=outreach title="Outreach and communication" %}
 {% include people-beta-section.html people=others title="Others (not yet classified in this experimental version)" %}
 
 <hr>
 
-<p class="alumni-link">
+<section class="people-beta-alumni">
+  <h2 class="people-beta-alumni-title">Alumni</h2>
+  <p class="people-beta-alumni-text">
+    Meet those who were once part of the Observatório Oceanográfico.
+    <a href="{{ site.baseurl }}/en/about/alumni/">View the Alumni page →</a>
+  </p>
+</section>
+
+<hr>
+
+<p class="people-beta-back-link">
   <a href="{{ site.baseurl }}/en/about/team/">
     → View the official Team page
   </a>

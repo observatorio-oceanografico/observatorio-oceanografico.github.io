@@ -11,17 +11,23 @@
 # Valor  = grupo experimental, um de:
 #   andre           — André Belém
 #   friday          — F.R.I.D.A.Y.
-#   colaboradores   — colaboradores/parceiros externos ao O2/UFF
-#   pesquisadores   — pesquisadores, pós-doutorado e pós-graduação
-#                      (doutorado/mestrado)
+#   senior          — "Pesquisadores seniores e colaboradores": papel
+#                      científico ou colaborativo de grande destaque na
+#                      rede do Observatório, interno ou externo. Ordem
+#                      curatorial, não segue o `order` do perfil — ver
+#                      `senior_order` mais abaixo.
+#   pesquisadores   — "Pesquisadores e pós-graduação": demais
+#                      pesquisadores, pós-docs, doutorandos e
+#                      mestrandos que não estejam no grupo `senior`.
+#                      Ordenado pelo `order` já existente do perfil.
 #   estudantes      — graduação / iniciação científica
-#   extensao        — bolsistas de extensão, cultura oceânica e
-#                      difusão/comunicação científica
+#   extensao        — extensão, cultura oceânica, comunicação
 #
-# Critério usado nesta primeira rodada (heurístico, não oficial):
-# combinação de `role` + `affiliation` de cada perfil em _people/.
 # Quem não aparecer aqui cai automaticamente na seção "Outros"
 # da página experimental, para nunca desaparecer silenciosamente.
+#
+# Alumni (ex.: Pedro Guedes, Rafael Ribeiro) NÃO entram neste arquivo:
+# a página beta não lista ex-membros, só linka para /sobre/alumni/.
 #
 # Isso é experimental e deve ser revisto quando (e se) o schema de
 # _people/ ganhar um campo oficial de grupo/categoria/vínculo.
@@ -29,10 +35,10 @@
 andre-belem: andre
 friday-bot: friday
 
-jaqueline-rapagna: colaboradores
+luciano-rapagna: senior
+bernardo-chede: senior
 
-luciano-rapagna: pesquisadores
-bernardo-chede: pesquisadores
+jaqueline-rapagna: pesquisadores
 maria-fernanda: pesquisadores
 chris-santos: pesquisadores
 mateus-sayao: pesquisadores
@@ -51,3 +57,25 @@ giuliana-martins: extensao
 sofia-feitosa: extensao
 bianca-silva: extensao
 thauana-fogos: extensao
+
+# -------------------------------------------------------------
+# Ordem curatorial do grupo "senior" (Pesquisadores seniores e
+# colaboradores). Esta lista PREVALECE sobre o `order` do perfil
+# para este grupo específico — as demais seções continuam usando
+# o `order` normal de _people/.
+#
+# "jonas" é um slug reservado/placeholder: Jonas (CMCC / Itália)
+# ainda NÃO tem perfil em _people/. Ele não é criado nesta etapa
+# (sem placeholder, sem card vazio). A página simplesmente ignora
+# entradas de senior_order sem perfil correspondente em site.people.
+#
+# Quando o perfil de Jonas for criado em _people/ com slug "jonas"
+# (e adicionado ao mapeamento acima como `jonas: senior`), ele
+# passará a aparecer automaticamente em primeiro lugar neste grupo,
+# sem precisar tocar no template. Se o slug real escolhido for
+# diferente de "jonas", atualize a entrada abaixo para o slug certo.
+# -------------------------------------------------------------
+senior_order:
+  - jonas
+  - luciano-rapagna
+  - bernardo-chede

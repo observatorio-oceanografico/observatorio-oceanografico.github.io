@@ -715,6 +715,36 @@ body.internal .content h2 {
   }
 }
 
+/* Seção discreta de Alumni ao final da página beta — mesma
+   linguagem visual do título de grupo, sem cards, apenas texto
+   e um link para a página oficial de Alumni. */
+.people-beta-alumni {
+  max-width: 480px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.people-beta-alumni-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.5;
+  margin: 0 0 0.5rem 0;
+}
+
+.people-beta-alumni-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.people-beta-back-link {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 /* =========================================================
    LINKS – CONTRASTE EM FUNDO ESCURO
    ========================================================= */
