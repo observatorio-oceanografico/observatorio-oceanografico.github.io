@@ -1,0 +1,19 @@
+{
+  "submission_type": "person",
+  "language": "pt",
+  "name": "Teste Portal O2",
+  "role": "Perfil de teste",
+  "institution": "Observatório Oceanográfico",
+  "areas": [
+    "teste"
+  ],
+  "links": {
+    "email": "",
+    "lattes": "",
+    "orcid": "",
+    "github": "",
+    "linkedin": ""
+  },
+  "profile_markdown": "Este é um teste do fluxo de submissão do O2.",
+  "photo": null
+}
