@@ -595,9 +595,16 @@ body.internal .content h2 {
 }
 
 /* =========================================================
-   PESSOAS — VERSÃO EXPERIMENTAL (/pessoas-beta/, /en/people-beta/)
-   Namespace isolado (.people-beta-*): não reaproveita nem altera
-   as regras .team-* usadas pela página oficial de Equipe.
+   EQUIPE — cards de pessoas (.people-beta-*)
+   Usado pelas páginas oficiais /sobre/equipe/ e /en/about/team/,
+   e ainda pelas rotas experimentais /pessoas-beta/ e
+   /en/people-beta/ (a serem removidas em etapa futura).
+
+   O nome das classes mantém o prefixo histórico "people-beta"
+   desta fase de prototipagem; renomear é um cleanup adiado para
+   não arriscar esta promoção. As regras .team-* logo abaixo
+   ficaram órfãs (não são mais usadas por nenhuma página) e podem
+   ser removidas em uma limpeza futura.
    ========================================================= */
 
 .people-beta-tag {

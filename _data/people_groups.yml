@@ -1,14 +1,19 @@
 # =============================================================
-# CLASSIFICAÇÃO PROVISÓRIA — página experimental /pessoas-beta/
+# CLASSIFICAÇÃO DE GRUPOS — página oficial de Equipe
+# (/sobre/equipe/, /en/about/team/)
 # =============================================================
 #
 # Este arquivo NÃO faz parte do schema de _people/. É uma camada
-# adicional, só usada pela página experimental de Pessoas, para
-# testar uma organização visual por grupos sem alterar o front
-# matter dos perfis existentes.
+# adicional, usada pela página oficial de Equipe para organizar os
+# perfis em grupos visuais, sem alterar o front matter dos perfis
+# existentes.
+#
+# Também é usado, por enquanto, pelas rotas experimentais
+# /pessoas-beta/ e /en/people-beta/ (mesma fonte de dados, mesmo
+# resultado — essas rotas devem ser removidas em uma etapa futura).
 #
 # Chave  = valor do campo `slug` em _people/<slug>.pt.md / .en.md
-# Valor  = grupo experimental, um de:
+# Valor  = grupo, um de:
 #   andre           — André Belém
 #   friday          — F.R.I.D.A.Y.
 #   senior          — "Pesquisadores seniores e colaboradores": papel
@@ -23,14 +28,14 @@
 #   estudantes      — graduação / iniciação científica
 #   extensao        — extensão, cultura oceânica, comunicação
 #
-# Quem não aparecer aqui cai automaticamente na seção "Outros"
-# da página experimental, para nunca desaparecer silenciosamente.
+# Quem não aparecer aqui cai automaticamente na seção "Outros",
+# para nunca desaparecer silenciosamente.
 #
 # Alumni (ex.: Pedro Guedes, Rafael Ribeiro) NÃO entram neste arquivo:
-# a página beta não lista ex-membros, só linka para /sobre/alumni/.
+# a página de Equipe não lista ex-membros, só linka para /sobre/alumni/.
 #
-# Isso é experimental e deve ser revisto quando (e se) o schema de
-# _people/ ganhar um campo oficial de grupo/categoria/vínculo.
+# Deve ser revisto quando (e se) o schema de _people/ ganhar um campo
+# oficial de grupo/categoria/vínculo.
 
 andre-belem: andre
 friday-bot: friday

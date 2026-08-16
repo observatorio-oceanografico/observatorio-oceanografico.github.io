@@ -16,7 +16,7 @@ alt_lang: /en/people-beta/
 </p>
 
 {% assign people = site.people | where: "lang", "pt" | sort: "order" %}
-{% assign groups = site.data.people_groups_beta %}
+{% assign groups = site.data.people_groups %}
 
 {% assign andre = people | where_exp: "p", "groups[p.slug] == 'andre'" %}
 {% assign friday = people | where_exp: "p", "groups[p.slug] == 'friday'" %}
@@ -30,7 +30,7 @@ alt_lang: /en/people-beta/
 {% endcomment %}
 {% assign senior_all = people | where_exp: "p", "groups[p.slug] == 'senior'" %}
 {% assign senior = "" | split: "" %}
-{% for senior_slug in site.data.people_groups_beta.senior_order %}
+{% for senior_slug in site.data.people_groups.senior_order %}
   {% assign senior_match = senior_all | where: "slug", senior_slug %}
   {% assign senior = senior | concat: senior_match %}
 {% endfor %}

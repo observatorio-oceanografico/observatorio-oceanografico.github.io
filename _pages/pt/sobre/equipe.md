@@ -8,38 +8,44 @@ alt_lang: /en/about/team/
 
 <h1 class="hero-title">Equipe</h1>
 
-<div class="team-grid">
+{% assign people = site.people | where: "lang", "pt" | sort: "order" %}
+{% assign groups = site.data.people_groups %}
 
-  {% assign people = site.people | where: "lang", "pt" | sort: "order" %}
+{% assign andre = people | where_exp: "p", "groups[p.slug] == 'andre'" %}
+{% assign friday = people | where_exp: "p", "groups[p.slug] == 'friday'" %}
+{% assign destaque = andre | concat: friday %}
 
-  {% for person in people %}
-    <a href="{{ site.baseurl }}{{ person.permalink }}" class="team-card">
+{% comment %}
+  Grupo "Pesquisadores seniores e colaboradores": ordem curatorial
+  (senior_order), não o `order` do perfil. Entradas de senior_order
+  sem perfil correspondente (ex.: Jonas, ainda sem perfil) são
+  simplesmente ignoradas — nenhum card vazio é criado.
+{% endcomment %}
+{% assign senior_all = people | where_exp: "p", "groups[p.slug] == 'senior'" %}
+{% assign senior = "" | split: "" %}
+{% for senior_slug in site.data.people_groups.senior_order %}
+  {% assign senior_match = senior_all | where: "slug", senior_slug %}
+  {% assign senior = senior | concat: senior_match %}
+{% endfor %}
 
-      <img
-        src="{{ site.baseurl }}{{ person.avatar }}"
-        alt="{{ person.title }}"
-        class="team-avatar"
-      >
+{% assign pesquisadores = people | where_exp: "p", "groups[p.slug] == 'pesquisadores'" %}
+{% assign estudantes = people | where_exp: "p", "groups[p.slug] == 'estudantes'" %}
+{% assign extensao = people | where_exp: "p", "groups[p.slug] == 'extensao'" %}
+{% assign outros = people | where_exp: "p", "groups[p.slug] == nil" %}
 
-      <div class="team-meta">
-        <strong class="team-name">{{ person.title }}</strong>
-
-        {% if person.role %}
-          <span class="team-role">{{ person.role }}</span>
-        {% endif %}
-      </div>
-
-    </a>
-  {% endfor %}
-
-</div>
+{% include people-beta-section.html people=destaque %}
+{% include people-beta-section.html people=senior title="Pesquisadores seniores e colaboradores" spaced="true" %}
+{% include people-beta-section.html people=pesquisadores title="Pesquisadores e pós-graduação" spaced="true" %}
+{% include people-beta-section.html people=estudantes title="Estudantes" %}
+{% include people-beta-section.html people=extensao title="Extensão e comunicação" %}
+{% include people-beta-section.html people=outros title="Outros" %}
 
 <hr>
 
-<p class="alumni-link">
-  <a href="{{ site.baseurl }}/sobre/alumni/">
-    → Alumni do Observatório Oceanográfico (ex-integrantes)
-  </a>
-</p>
-
-
+<section class="people-beta-alumni">
+  <h2 class="people-beta-alumni-title">Alumni</h2>
+  <p class="people-beta-alumni-text">
+    Conheça quem já fez parte do Observatório Oceanográfico.
+    <a href="{{ site.baseurl }}/sobre/alumni/">Ver página de Alumni →</a>
+  </p>
+</section>
