@@ -1,29 +1,29 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pessoas â€” Portal de SubmissÃµes do O2</title>
-  <meta name="description" content="Envie seu perfil de pessoa para o ObservatÃ³rio OceanogrÃ¡fico." />
+  <title>Pessoas — Portal de Submissões do O2</title>
+  <meta name="description" content="Envie seu perfil de pessoa para o Observatório Oceanográfico." />
   <link rel="stylesheet" href="join.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand__logo-link" href="index.html" aria-label="ObservatÃ³rio OceanogrÃ¡fico â€” pÃ¡gina inicial">
-        <img class="brand__logo" src="assets/O2_logo_branco.png" alt="ObservatÃ³rio OceanogrÃ¡fico" />
+      <a class="brand__logo-link" href="index.html" aria-label="Observatório Oceanográfico — página inicial">
+        <img class="brand__logo" src="assets/O2_logo_branco.png" alt="Observatório Oceanográfico" />
       </a>
       <div class="brand">
-        <p class="brand__title">ObservatÃ³rio OceanogrÃ¡fico</p>
-        <p class="brand__tagline">Portal de SubmissÃµes do O2</p>
+        <p class="brand__title">Observatório Oceanográfico</p>
+        <p class="brand__tagline">Portal de Submissões do O2</p>
       </div>
     </div>
   </header>
 
-  <nav class="module-bar" aria-label="NavegaÃ§Ã£o do portal">
+  <nav class="module-bar" aria-label="Navegação do portal">
     <div class="module-bar__inner">
-      <a class="module-bar__back" href="index.html">â† Portal O2</a>
+      <a class="module-bar__back" href="index.html">← Portal O2</a>
       <span class="module-bar__sep" aria-hidden="true">/</span>
       <span class="module-bar__current">Pessoas</span>
     </div>
@@ -33,10 +33,10 @@
 
     <!-- ============================= FORM ============================= -->
     <section class="form-panel" aria-labelledby="form-heading">
-      <h1 id="form-heading">Perfil de pessoa do ObservatÃ³rio OceanogrÃ¡fico</h1>
+      <h1 id="form-heading">Perfil de pessoa do Observatório Oceanográfico</h1>
       <p class="form-intro">
-        Antes de preencher este formulÃ¡rio, converse com AndrÃ© Belem
-        (andrebelem@id.uff.br), curador do ObservatÃ³rio OceanogrÃ¡fico.
+        Antes de preencher este formulário, converse com André Belem
+        (andrebelem@id.uff.br), curador do Observatório Oceanográfico.
       </p>
       <p class="form-intro">
         O texto do perfil pode ser escrito em Markdown simples. Se precisar
@@ -53,14 +53,14 @@
 
         <!-- ---------- Language ---------- -->
         <fieldset class="form-section">
-          <legend>Idioma desta submissÃ£o</legend>
+          <legend>Idioma desta submissão</legend>
           <p class="section-help">
-            Escreva seu perfil em apenas um idioma. A segunda versÃ£o (PT ou
-            EN) Ã© produzida depois pela equipe de curadoria.
+            Escreva seu perfil em apenas um idioma. A segunda versão (PT ou
+            EN) é produzida depois pela equipe de curadoria.
           </p>
-          <div class="lang-radio-group" role="radiogroup" aria-label="Idioma desta submissÃ£o">
+          <div class="lang-radio-group" role="radiogroup" aria-label="Idioma desta submissão">
             <input type="radio" id="language-pt" name="language" value="pt" checked />
-            <label for="language-pt" class="lang-radio__btn">PortuguÃªs</label>
+            <label for="language-pt" class="lang-radio__btn">Português</label>
             <input type="radio" id="language-en" name="language" value="en" />
             <label for="language-en" class="lang-radio__btn">English</label>
           </div>
@@ -68,7 +68,7 @@
 
         <!-- ---------- Identification ---------- -->
         <fieldset class="form-section">
-          <legend>IdentificaÃ§Ã£o</legend>
+          <legend>Identificação</legend>
 
           <div class="field">
             <label for="fullName">Nome completo <span class="required" aria-hidden="true">*</span></label>
@@ -78,15 +78,15 @@
           </div>
 
           <div class="field">
-            <label for="role">FunÃ§Ã£o / vÃ­nculo <span class="required" aria-hidden="true">*</span></label>
+            <label for="role">Função / vínculo <span class="required" aria-hidden="true">*</span></label>
             <input type="text" id="role" name="role" required
-                   placeholder="Ex.: Pesquisadora, Doutorando, Professor titularâ€¦"
+                   placeholder="Ex.: Pesquisadora, Doutorando, Professor titular…"
                    aria-describedby="role-error" />
             <p id="role-error" class="field-error" aria-live="polite"></p>
           </div>
 
           <div class="field">
-            <label for="institution">InstituiÃ§Ã£o <span class="required" aria-hidden="true">*</span></label>
+            <label for="institution">Instituição <span class="required" aria-hidden="true">*</span></label>
             <input type="text" id="institution" name="institution" required
                    placeholder="Ex.: Universidade Federal Fluminense (UFF)"
                    aria-describedby="institution-error" />
@@ -96,23 +96,23 @@
 
         <!-- ---------- Areas ---------- -->
         <fieldset class="form-section">
-          <legend>Ãreas de atuaÃ§Ã£o</legend>
+          <legend>Áreas de atuação</legend>
 
           <div class="field">
-            <label for="areaInput">Adicionar Ã¡rea</label>
+            <label for="areaInput">Adicionar área</label>
             <div class="tag-input" id="areas-tag-input">
               <div class="tag-input__chips" id="areas-chips" aria-live="polite"></div>
-              <input type="text" id="areaInput" placeholder="Digite uma Ã¡rea e pressione Enter"
+              <input type="text" id="areaInput" placeholder="Digite uma área e pressione Enter"
                      aria-describedby="areas-help" />
             </div>
-            <p id="areas-help" class="field-help">Pressione Enter ou vÃ­rgula para adicionar. Clique no Ã— para remover.</p>
+            <p id="areas-help" class="field-help">Pressione Enter ou vírgula para adicionar. Clique no × para remover.</p>
           </div>
         </fieldset>
 
         <!-- ---------- Links ---------- -->
         <fieldset class="form-section">
           <legend>Links profissionais</legend>
-          <p class="section-help">Todos os campos abaixo sÃ£o opcionais. Inclua a URL completa (comeÃ§ando com https://).</p>
+          <p class="section-help">Todos os campos abaixo são opcionais. Inclua a URL completa (começando com https://).</p>
 
           <div class="field">
             <label for="email">E-mail</label>
@@ -123,19 +123,19 @@
 
           <div class="field">
             <div class="field-label-row">
-              <label for="lattes">CurrÃ­culo Lattes</label>
+              <label for="lattes">Currículo Lattes</label>
               <span class="help-tip">
-                <button type="button" class="help-tip__btn" aria-label="Ajuda sobre CurrÃ­culo Lattes"
+                <button type="button" class="help-tip__btn" aria-label="Ajuda sobre Currículo Lattes"
                         aria-describedby="lattes-tip" aria-expanded="false">?</button>
                 <span class="help-tip__bubble" id="lattes-tip" role="tooltip">
-                  Link para o seu CurrÃ­culo Lattes, se vocÃª tiver. Para alunos de iniciaÃ§Ã£o
-                  cientÃ­fica, mestrado e doutorado, o CurrÃ­culo Lattes Ã© obrigatÃ³rio.
+                  Link para o seu Currículo Lattes, se você tiver. Para alunos de iniciação
+                  científica, mestrado e doutorado, o Currículo Lattes é obrigatório.
                   Acesse: https://lattes.cnpq.br/
                 </span>
               </span>
             </div>
             <input type="url" id="lattes" name="lattes" inputmode="url"
-                   placeholder="https://lattes.cnpq.br/â€¦" aria-describedby="lattes-error" />
+                   placeholder="https://lattes.cnpq.br/…" aria-describedby="lattes-error" />
             <p id="lattes-error" class="field-error" aria-live="polite"></p>
           </div>
 
@@ -147,7 +147,7 @@
                         aria-describedby="orcid-tip" aria-expanded="false">?</button>
                 <span class="help-tip__bubble" id="orcid-tip" role="tooltip">
                   Identificador internacional de pesquisador. Saiba mais em https://orcid.org/.
-                  Se vocÃª publica conosco, precisa ter um ORCID.
+                  Se você publica conosco, precisa ter um ORCID.
                 </span>
               </span>
             </div>
@@ -163,13 +163,13 @@
                 <button type="button" class="help-tip__btn" aria-label="Ajuda sobre GitHub"
                         aria-describedby="github-tip" aria-expanded="false">?</button>
                 <span class="help-tip__bubble" id="github-tip" role="tooltip">
-                  Link para seu perfil ou repositÃ³rios no GitHub. Saiba mais em
+                  Link para seu perfil ou repositórios no GitHub. Saiba mais em
                   https://docs.github.com/pt/get-started/start-your-journey/what-is-github.
                 </span>
               </span>
             </div>
             <input type="url" id="github" name="github" inputmode="url"
-                   placeholder="https://github.com/â€¦" aria-describedby="github-error" />
+                   placeholder="https://github.com/…" aria-describedby="github-error" />
             <p id="github-error" class="field-error" aria-live="polite"></p>
           </div>
 
@@ -180,13 +180,13 @@
                 <button type="button" class="help-tip__btn" aria-label="Ajuda sobre LinkedIn"
                         aria-describedby="linkedin-tip" aria-expanded="false">?</button>
                 <span class="help-tip__bubble" id="linkedin-tip" role="tooltip">
-                  Link para seu perfil profissional no LinkedIn â€” a menos que vocÃª planeje
+                  Link para seu perfil profissional no LinkedIn — a menos que você planeje
                   arrumar um emprego como motorista de aplicativo.
                 </span>
               </span>
             </div>
             <input type="url" id="linkedin" name="linkedin" inputmode="url"
-                   placeholder="https://linkedin.com/in/â€¦" aria-describedby="linkedin-error" />
+                   placeholder="https://linkedin.com/in/…" aria-describedby="linkedin-error" />
             <p id="linkedin-error" class="field-error" aria-live="polite"></p>
           </div>
         </fieldset>
@@ -205,17 +205,17 @@
               aria-describedby="photo-help photo-error"
             />
             <p id="photo-help" class="field-help">
-              Opcional. JPG, PNG ou WEBP, atÃ© 8&nbsp;MB. A imagem Ã© processada
+              Opcional. JPG, PNG ou WEBP, até 8&nbsp;MB. A imagem é processada
               inteiramente no seu navegador: recortada em formato quadrado,
-              redimensionada para 800&nbsp;Ã—&nbsp;800&nbsp;px e convertida
-              para PNG (atÃ© 1&nbsp;MB).
+              redimensionada para 800&nbsp;×&nbsp;800&nbsp;px e convertida
+              para PNG (até 1&nbsp;MB).
             </p>
             <p id="photo-error" class="field-error" aria-live="polite"></p>
 
             <div id="photo-crop-panel" class="photo-crop-panel" hidden>
               <p class="field-help">
                 Arraste a imagem para reposicionar e use o controle de zoom para
-                ajustar o recorte quadrado. Um recorte central Ã© aplicado
+                ajustar o recorte quadrado. Um recorte central é aplicado
                 automaticamente.
               </p>
               <div class="crop-stage" id="crop-stage">
@@ -232,41 +232,41 @@
 
         <!-- ---------- Free-form content ---------- -->
         <fieldset class="form-section">
-          <legend>Sobre mim / ConteÃºdo do perfil</legend>
+          <legend>Sobre mim / Conteúdo do perfil</legend>
 
           <div class="field">
-            <label for="profileMarkdown">ConteÃºdo em Markdown</label>
+            <label for="profileMarkdown">Conteúdo em Markdown</label>
             <textarea id="profileMarkdown" name="profileMarkdown" rows="10"
                       aria-describedby="profileMarkdown-help"></textarea>
             <p id="profileMarkdown-help" class="field-help">
-              Opcional. Markdown simples Ã© aceito: <code>##</code> para
-              subtÃ­tulos, <code>-</code> para listas, <code>**negrito**</code>
-              e <code>*itÃ¡lico*</code>. HTML digitado aqui nÃ£o Ã© interpretado
-              â€” aparece como texto puro.
+              Opcional. Markdown simples é aceito: <code>##</code> para
+              subtítulos, <code>-</code> para listas, <code>**negrito**</code>
+              e <code>*itálico*</code>. HTML digitado aqui não é interpretado
+              — aparece como texto puro.
             </p>
           </div>
 
           <div class="field">
-            <p class="field-help">PrÃ©via</p>
+            <p class="field-help">Prévia</p>
             <div id="markdown-live-preview" class="markdown-live-preview markdown-body" aria-live="polite"></div>
           </div>
         </fieldset>
 
         <div class="form-actions">
-          <button type="submit" class="btn btn--primary">Preparar submissÃ£o</button>
-          <button type="reset" class="btn btn--ghost">Limpar formulÃ¡rio</button>
+          <button type="submit" class="btn btn--primary">Preparar submissão</button>
+          <button type="reset" class="btn btn--ghost">Limpar formulário</button>
         </div>
         <p id="submit-status" class="submit-status" aria-live="polite"></p>
 
         <div id="result-panel" class="result-panel" hidden>
           <h2>Dados gerados</h2>
           <p class="section-help">
-            Este Ã© o payload desta submissÃ£o, jÃ¡ enviado ao servidor (veja o
+            Este é o payload desta submissão, já enviado ao servidor (veja o
             status acima). Campos de curadoria (slug, grupo, ordem,
-            ativo/alumni, permalink, idioma alternativo etc.) nÃ£o fazem parte
-            deste formulÃ¡rio â€” sÃ£o definidos depois pela equipe responsÃ¡vel.
-            Os botÃµes abaixo baixam o JSON e a foto processada apenas para
-            conferÃªncia local.
+            ativo/alumni, permalink, idioma alternativo etc.) não fazem parte
+            deste formulário — são definidos depois pela equipe responsável.
+            Os botões abaixo baixam o JSON e a foto processada apenas para
+            conferência local.
           </p>
           <pre id="result-json" class="result-json" tabindex="0"></pre>
           <div class="form-actions">
@@ -281,13 +281,13 @@
     <aside class="preview-panel" aria-labelledby="preview-heading">
       <div class="preview-panel__sticky">
         <div class="preview-panel__head">
-          <h2 id="preview-heading">PrÃ©via em tempo real</h2>
-          <span class="lang-flag" id="preview-lang-badge" aria-label="Idioma desta submissÃ£o">PT</span>
+          <h2 id="preview-heading">Prévia em tempo real</h2>
+          <span class="lang-flag" id="preview-lang-badge" aria-label="Idioma desta submissão">PT</span>
         </div>
 
-        <p class="section-help">RenderizaÃ§Ã£o aproximada do seu registro na pÃ¡gina de pessoas do ObservatÃ³rio OceanogrÃ¡fico.</p>
+        <p class="section-help">Renderização aproximada do seu registro na página de pessoas do Observatório Oceanográfico.</p>
 
-        <article class="team-card" id="team-card" aria-label="PrÃ©via do cartÃ£o da equipe">
+        <article class="team-card" id="team-card" aria-label="Prévia do cartão da equipe">
           <div class="team-card__photo">
             <img id="preview-photo" src="" alt="" hidden />
             <div id="preview-photo-fallback" class="team-card__photo-fallback" aria-hidden="true">
@@ -296,10 +296,10 @@
           </div>
 
           <h3 class="team-card__name" id="preview-name">Seu nome</h3>
-          <p class="team-card__role" id="preview-role">FunÃ§Ã£o / vÃ­nculo</p>
-          <p class="team-card__affiliation" id="preview-institution">InstituiÃ§Ã£o</p>
+          <p class="team-card__role" id="preview-role">Função / vínculo</p>
+          <p class="team-card__affiliation" id="preview-institution">Instituição</p>
 
-          <div class="team-card__tags" id="preview-areas" aria-label="Ãreas de atuaÃ§Ã£o"></div>
+          <div class="team-card__tags" id="preview-areas" aria-label="Áreas de atuação"></div>
 
           <div class="team-card__links" id="preview-links" aria-label="Links do perfil">
             <a class="team-card__link team-card__link--muted" id="link-email" href="#" hidden>E-mail</a>
@@ -310,7 +310,7 @@
           </div>
 
           <div class="team-card__description markdown-body" id="preview-markdown">
-            <p class="team-card__placeholder">Seu conteÃºdo em Markdown aparecerÃ¡ aqui.</p>
+            <p class="team-card__placeholder">Seu conteúdo em Markdown aparecerá aqui.</p>
           </div>
         </article>
       </div>
@@ -319,10 +319,9 @@
   </main>
 
   <footer class="site-footer">
-    <p>Portal de SubmissÃµes do O2 â€” protÃ³tipo de frontend. NÃ£o conectado Ã  produÃ§Ã£o.</p>
+    <p>Portal de Submissões do Observatório Oceanográfico.</p>
   </footer>
 
   <script src="join.js"></script>
 </body>
 </html>
-
