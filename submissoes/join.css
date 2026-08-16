@@ -1,0 +1,1269 @@
+/* ==========================================================================
+   O2 Submission Portal — join prototype styles
+   Plain CSS, no framework. Written to be easy to lift into the main site.
+   ========================================================================== */
+
+:root {
+  /* Brand palette — institutional navy/cyan, drawn from the O2 mark, kept
+     intentionally quiet */
+  --brand-900: #0d2350;
+  --brand-700: #14479a;
+  --brand-600: #1f8fcf;
+  --brand-100: #e5f1fb;
+  --brand-050: #f4f9fd;
+
+  --ink-900: #182226;
+  --ink-700: #3d4a4f;
+  --ink-500: #647278;
+  --ink-300: #a7b2b6;
+
+  --surface: #ffffff;
+  --surface-muted: #f6f8f8;
+  --border: #dde4e5;
+  --border-strong: #c3ccce;
+
+  --danger: #a3271e;
+  --danger-bg: #fbeceb;
+  --success: #1c7a4d;
+  --success-bg: #e9f6ef;
+  --focus-ring: #14748a;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --font-heading: Georgia, "Times New Roman", "Noto Serif", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-muted);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* -------------------------------- Header -------------------------------- */
+
+.site-header {
+  background: var(--brand-900);
+  color: #fff;
+}
+
+.site-header__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.brand__logo-link {
+  display: block;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+}
+
+.brand__logo-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.brand__logo {
+  height: 52px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.brand__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.brand__tagline {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+  max-width: 42em;
+}
+
+@media (max-width: 480px) {
+  .brand__logo {
+    height: 38px;
+  }
+
+  .brand__title {
+    font-size: 1.1rem;
+  }
+
+  .brand__tagline {
+    font-size: 0.85rem;
+  }
+}
+
+/* ------------------------------ Module bar -------------------------------- */
+/* Thin breadcrumb strip used on module pages (Pessoas / Notícias / Projetos)
+   to link back to the portal home without introducing a full nav/tabs
+   system. */
+
+.module-bar {
+  background: var(--brand-050);
+  border-bottom: 1px solid var(--brand-100);
+}
+
+.module-bar__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.85rem;
+}
+
+.module-bar__back {
+  color: var(--brand-700);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.module-bar__back:hover {
+  text-decoration: underline;
+}
+
+.module-bar__sep {
+  color: var(--ink-300);
+}
+
+.module-bar__current {
+  color: var(--ink-700);
+}
+
+/* -------------------------------- Layout --------------------------------- */
+
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-7);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------------------- Home ----------------------------------- */
+/* Portal entry: a short institutional intro followed by three cards sharing
+   one visual language (Pessoas / Notícias / Projetos). */
+
+.home {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-7);
+}
+
+.home__intro {
+  text-align: center;
+  margin: 0 0 var(--space-6);
+}
+
+.home__intro h1 {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  color: var(--brand-900);
+  margin: 0 0 var(--space-3);
+}
+
+.home__intro p {
+  color: var(--ink-700);
+  max-width: 56em;
+  margin: 0 auto;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+@media (max-width: 760px) {
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.module-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.module-card:hover {
+  border-color: var(--brand-600);
+  box-shadow: 0 4px 18px rgba(13, 35, 80, 0.08);
+  transform: translateY(-1px);
+}
+
+.module-card:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.module-card__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--brand-100);
+  color: var(--brand-700);
+  margin-bottom: var(--space-4);
+}
+
+.module-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.module-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--brand-900);
+  margin: 0 0 var(--space-1);
+}
+
+.module-card__desc {
+  color: var(--ink-700);
+  font-size: 0.9rem;
+  margin: 0 0 var(--space-4);
+  flex-grow: 1;
+}
+
+.module-card__cta {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-700);
+}
+
+.module-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: var(--space-3);
+  padding: 2px var(--space-2);
+  border-radius: 999px;
+  background: var(--brand-050);
+  border: 1px solid var(--brand-100);
+  color: var(--brand-700);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* ------------------------------ Module panel ------------------------------- */
+/* Shared "coming soon" placeholder markup. Unused for now (Pessoas,
+   Notícias and Projetos all have real forms), kept for the next module that
+   needs a placeholder page. */
+
+.module-panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-7);
+}
+
+.module-panel__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.module-panel__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--brand-100);
+  color: var(--brand-700);
+}
+
+.module-panel__icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.module-panel__card h1 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--brand-900);
+  margin: 0 0 var(--space-2);
+}
+
+.module-panel__card p {
+  color: var(--ink-700);
+  max-width: 46em;
+  margin: 0 auto var(--space-2);
+}
+
+.module-panel__card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.module-panel__back {
+  display: inline-block;
+  margin-top: var(--space-5);
+}
+
+/* ------------------------------ Form panel -------------------------------- */
+
+.form-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+@media (max-width: 560px) {
+  .form-panel {
+    padding: var(--space-5) var(--space-4);
+  }
+}
+
+.form-panel h1 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  margin: 0 0 var(--space-2);
+  color: var(--brand-900);
+}
+
+.form-intro {
+  color: var(--ink-700);
+  margin: 0 0 var(--space-5);
+  max-width: 60em;
+}
+
+.notice {
+  background: var(--brand-050);
+  border: 1px solid var(--brand-100);
+  border-left: 4px solid var(--brand-600);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.92rem;
+  color: var(--brand-900);
+  margin-bottom: var(--space-6);
+}
+
+.notice strong {
+  color: var(--brand-700);
+}
+
+/* ------------------------------ Fieldsets --------------------------------- */
+
+.form-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  margin: 0 0 var(--space-5);
+}
+
+.form-section legend {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--brand-900);
+  padding: 0 var(--space-2);
+}
+
+.lang-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.1em;
+  padding: 0 var(--space-1);
+  border-radius: var(--radius-sm);
+  background: var(--brand-100);
+  color: var(--brand-700);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.section-help {
+  margin: 0 0 var(--space-4);
+  color: var(--ink-500);
+  font-size: 0.9rem;
+}
+
+/* ---------------------------------- Fields -------------------------------- */
+
+.field {
+  margin-bottom: var(--space-4);
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink-900);
+  margin-bottom: var(--space-1);
+}
+
+.required {
+  color: var(--danger);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+textarea {
+  width: 100%;
+  font: inherit;
+  color: var(--ink-900);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 5.5em;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.field-help {
+  margin: var(--space-1) 0 0;
+  font-size: 0.82rem;
+  color: var(--ink-500);
+}
+
+.field-error {
+  margin: var(--space-1) 0 0;
+  font-size: 0.85rem;
+  color: var(--danger);
+  font-weight: 600;
+  min-height: 1.1em;
+}
+
+.field-error:empty {
+  display: none;
+}
+
+/* --------------------------------- Help tips -------------------------------- */
+/* Small "?" tooltip button next to a label, for the handful of professional
+   link fields (Lattes, ORCID, GitHub, LinkedIn) whose purpose may not be
+   obvious to every visitor. Pure CSS show/hide on hover and keyboard focus;
+   a small script (initHelpTips in join.js) adds a tap-to-toggle fallback
+   for touch screens, where :hover is unreliable. Does not touch the label's
+   own line height or the input's width. */
+
+.field-label-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+.field-label-row label {
+  margin-bottom: 0;
+}
+
+.help-tip {
+  position: relative;
+  display: inline-flex;
+  line-height: 1;
+}
+
+.help-tip__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-muted);
+  color: var(--ink-500);
+  font: inherit;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0;
+  cursor: help;
+}
+
+.help-tip__btn:hover,
+.help-tip__btn:focus-visible,
+.help-tip__btn[aria-expanded="true"] {
+  background: var(--brand-100);
+  border-color: var(--brand-600);
+  color: var(--brand-700);
+}
+
+.help-tip__btn:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.help-tip__bubble {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 7px);
+  z-index: 20;
+  width: max-content;
+  max-width: min(260px, calc(100vw - 64px));
+  background: var(--ink-900);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.45;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 14px rgba(13, 35, 80, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+
+.help-tip__bubble::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 6px;
+  border: 5px solid transparent;
+  border-bottom-color: var(--ink-900);
+}
+
+.help-tip__btn:hover + .help-tip__bubble,
+.help-tip__btn:focus-visible + .help-tip__bubble,
+.help-tip__btn[aria-expanded="true"] + .help-tip__bubble {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* --------------------------- Language radio group -------------------------- */
+/* Native radio inputs styled as a two-option pill toggle, visually matching
+   the read-only language badge in the preview panel (.lang-flag). */
+
+.lang-radio-group {
+  display: inline-flex;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.lang-radio-group input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.lang-radio__btn {
+  display: inline-block;
+  margin: 0;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  background: var(--surface);
+  color: var(--ink-700);
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-radio-group input[type="radio"] + .lang-radio__btn + input[type="radio"] + .lang-radio__btn {
+  border-left: 1px solid var(--border-strong);
+}
+
+.lang-radio-group input[type="radio"]:checked + .lang-radio__btn {
+  background: var(--brand-700);
+  color: #fff;
+}
+
+.lang-radio-group input[type="radio"]:focus-visible + .lang-radio__btn {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* -------------------------------- Tag input -------------------------------- */
+/* Simple multi-value entry used by "Áreas de atuação": type + Enter/comma to
+   add a chip, click × to remove. Backed by a plain JS array, no dependency. */
+
+.tag-input {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: var(--space-2);
+}
+
+.tag-input__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.tag-input__chips:empty {
+  display: none;
+}
+
+.tag-input input[type="text"] {
+  border: none;
+  padding: var(--space-1) var(--space-1);
+}
+
+.tag-input__chips + input[type="text"] {
+  margin-top: var(--space-1);
+}
+
+.tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--brand-050);
+  border: 1px solid var(--brand-100);
+  color: var(--brand-900);
+  border-radius: 999px;
+  padding: 2px var(--space-1) 2px var(--space-2);
+  font-size: 0.82rem;
+}
+
+.tag-chip__remove {
+  font: inherit;
+  line-height: 1;
+  border: none;
+  background: transparent;
+  color: var(--brand-700);
+  cursor: pointer;
+  padding: 0 2px;
+  border-radius: var(--radius-sm);
+}
+
+.tag-chip__remove:hover {
+  background: var(--brand-100);
+}
+
+/* ------------------------------ Photo crop -------------------------------- */
+
+.photo-crop-panel {
+  margin-top: var(--space-3);
+}
+
+.crop-stage {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: var(--space-2) 0 var(--space-3);
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-muted);
+  cursor: grab;
+  touch-action: none;
+}
+
+.crop-stage.is-dragging {
+  cursor: grabbing;
+}
+
+.crop-stage img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .crop-stage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.crop-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.crop-controls label {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-700);
+}
+
+.crop-controls input[type="range"] {
+  flex: 1;
+}
+
+.photo-meta {
+  margin: var(--space-3) 0 0;
+  font-size: 0.8rem;
+  color: var(--ink-500);
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  line-height: 1.6;
+}
+
+.photo-meta strong {
+  color: var(--ink-700);
+  font-family: var(--font-body);
+}
+
+/* ----------------------------- Error summary ------------------------------ */
+
+.error-summary {
+  border: 1px solid var(--danger);
+  background: var(--danger-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.error-summary__title {
+  margin: 0 0 var(--space-2);
+  font-weight: 700;
+  color: var(--danger);
+}
+
+.error-summary ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.error-summary a {
+  color: var(--danger);
+}
+
+/* ---------------------------------- Actions -------------------------------- */
+
+.form-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-2);
+}
+
+.btn {
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.btn--primary {
+  background: var(--brand-700);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--brand-900);
+}
+
+.btn--secondary {
+  background: var(--brand-100);
+  color: var(--brand-900);
+  border-color: var(--brand-100);
+}
+
+.btn--secondary:hover {
+  background: #dcedee;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink-700);
+  border-color: var(--border-strong);
+}
+
+.btn--ghost:hover {
+  background: var(--surface-muted);
+}
+
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ------------------------------ Submit status ------------------------------ */
+
+.submit-status {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.submit-status:empty {
+  display: none;
+  padding: 0;
+}
+
+.submit-status--pending {
+  color: var(--brand-700);
+  background: var(--brand-050);
+}
+
+.submit-status--success {
+  color: var(--success);
+  background: var(--success-bg);
+}
+
+.submit-status--error {
+  color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.submit-status__note {
+  font-weight: 400;
+  color: var(--ink-700);
+}
+
+.submit-status__link {
+  color: var(--brand-700);
+  text-decoration: underline;
+}
+
+.submit-status__link:hover {
+  color: var(--brand-900);
+}
+
+/* ------------------------------- Result panel ------------------------------ */
+
+.result-panel {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+}
+
+.result-panel h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--brand-900);
+  margin: 0 0 var(--space-2);
+}
+
+.result-json {
+  background: var(--ink-900);
+  color: #d8f0ee;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+/* ------------------------------ Preview panel ------------------------------ */
+
+.preview-panel__sticky {
+  position: sticky;
+  top: var(--space-5);
+}
+
+@media (max-width: 900px) {
+  .preview-panel__sticky {
+    position: static;
+  }
+}
+
+.preview-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.preview-panel h2 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--brand-900);
+  margin: 0;
+}
+
+/* --------------------------------- Team card -------------------------------- */
+
+.team-card {
+  margin-top: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.team-card__photo {
+  width: 108px;
+  height: 108px;
+  margin: 0 auto var(--space-4);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--brand-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__photo-fallback {
+  color: var(--brand-700);
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.team-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin: 0 0 var(--space-1);
+  color: var(--ink-900);
+}
+
+.team-card__role {
+  margin: 0;
+  font-weight: 600;
+  color: var(--brand-700);
+  font-size: 0.92rem;
+}
+
+.team-card__affiliation {
+  margin: var(--space-1) 0 0;
+  color: var(--ink-500);
+  font-size: 0.85rem;
+}
+
+.team-card__description {
+  margin: var(--space-3) 0 0;
+  color: var(--ink-700);
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.team-card__placeholder {
+  color: var(--ink-300);
+  font-style: italic;
+}
+
+/* ------------------------------ Markdown body ------------------------------ */
+/* Shared rendering rules for the sanitized Markdown preview — used both by
+   the live preview under the "Sobre mim" textarea and inside the team-card
+   preview. All markup here is generated by renderMarkdownPreview() from
+   escaped text, never inserted raw. */
+
+.markdown-body {
+  text-align: left;
+}
+
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-family: var(--font-heading);
+  color: var(--brand-900);
+  margin: var(--space-3) 0 var(--space-1);
+  font-size: 1rem;
+}
+
+.markdown-body h4:first-child,
+.markdown-body h5:first-child,
+.markdown-body h6:first-child,
+.markdown-body p:first-child {
+  margin-top: 0;
+}
+
+.markdown-body p {
+  margin: 0 0 var(--space-2);
+}
+
+.markdown-body ul {
+  margin: 0 0 var(--space-2);
+  padding-left: 1.2em;
+}
+
+.markdown-body li {
+  margin-bottom: 2px;
+}
+
+.markdown-body strong {
+  color: var(--ink-900);
+}
+
+.markdown-live-preview {
+  margin-top: var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-muted);
+  font-size: 0.9rem;
+  color: var(--ink-700);
+  min-height: 3em;
+}
+
+.markdown-live-preview:empty::before {
+  content: "A prévia do seu texto aparecerá aqui.";
+  color: var(--ink-300);
+  font-style: italic;
+}
+
+.team-card__tags {
+  margin-top: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+.team-card__tag {
+  background: var(--brand-050);
+  border: 1px solid var(--brand-100);
+  color: var(--brand-900);
+  border-radius: 999px;
+  padding: 2px var(--space-2);
+  font-size: 0.75rem;
+}
+
+.team-card__links {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.team-card__link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--brand-700);
+  border: 1px solid var(--brand-100);
+  background: var(--brand-050);
+  border-radius: var(--radius-sm);
+  padding: 3px var(--space-2);
+}
+
+.team-card__link:hover {
+  background: var(--brand-100);
+}
+
+.team-card__link--muted {
+  color: var(--ink-300);
+  background: var(--surface-muted);
+  border-color: var(--border);
+}
+
+/* -------------------------------- Media frame ------------------------------- */
+/* Shared bounded box for a single editorial image (Notícias). Unlike the
+   circular, forced-square photo used by Pessoas, this never crops: the
+   image is letterboxed with object-fit: contain so its full content is
+   always visible, whatever its aspect ratio. Used both for the inline
+   upload preview inside the form and for the news-card preview. */
+
+.media-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-muted);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.media-frame__fallback {
+  color: var(--ink-300);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.media-frame--inline {
+  max-width: 360px;
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+/* --------------------------------- News card -------------------------------- */
+
+.news-card {
+  margin-top: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  text-align: left;
+}
+
+.news-card__image-frame {
+  margin-bottom: var(--space-4);
+}
+
+.news-card__date {
+  margin: 0 0 var(--space-1);
+  color: var(--ink-500);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.news-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin: 0 0 var(--space-2);
+  color: var(--ink-900);
+}
+
+.news-card__excerpt {
+  margin: 0;
+  color: var(--ink-700);
+  font-size: 0.92rem;
+}
+
+.news-card__content {
+  margin-top: var(--space-4);
+}
+
+/* -------------------------------- Project meta ------------------------------ */
+/* Simple label/value rows for Projetos' preview card — institutions,
+   institutional support and contact. Rows are hidden individually via the
+   `hidden` attribute when the corresponding field is empty. */
+
+.project-meta {
+  margin: var(--space-3) 0 0;
+}
+
+.project-meta__row {
+  margin: 0 0 var(--space-2);
+}
+
+.project-meta__row dt {
+  color: var(--ink-500);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.project-meta__row dd {
+  margin: 2px 0 0;
+  color: var(--ink-700);
+  font-size: 0.92rem;
+  white-space: pre-line;
+}
+
+/* Links inside Markdown content — only used by Notícias (Pessoas' Markdown
+   help text does not document link syntax, so join.js's renderer has none). */
+.markdown-body a {
+  color: var(--brand-700);
+}
+
+.markdown-body a:hover {
+  color: var(--brand-900);
+}
+
+/* --------------------------------- Footer ----------------------------------- */
+
+.site-footer {
+  text-align: center;
+  padding: var(--space-5);
+  color: var(--ink-500);
+  font-size: 0.82rem;
+}
