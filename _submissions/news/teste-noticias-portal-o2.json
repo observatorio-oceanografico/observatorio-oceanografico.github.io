@@ -1,0 +1,13 @@
+{
+  "submission_type": "news",
+  "language": "pt",
+  "title": "Teste Notícias Portal O2",
+  "date": "2026-08-16",
+  "excerpt": "Teste temporário da submissão de notícias.",
+  "tags": [
+    "teste",
+    "portal"
+  ],
+  "content_markdown": "## Teste\n\nEsta é uma submissão temporária para validar o endpoint.",
+  "image": null
+}
