@@ -9,10 +9,13 @@ role: "Biologist · Postdoctoral Researcher"
 affiliation: "Graduation program in Ocean and Earth Dynamics (PPG-DOT)"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/equipe/luciano-rapagna.jpg"
+avatar: "/assets/img/equipe/luciano-carvalho-rapagna.png"
 
 email: "lucianorapagna@id.uff.br"
 orcid: "0000-0002-9009-4463"
+lattes: "http://lattes.cnpq.br/8457148759274393"
+github: "https://github.com/luciusrapagna"
+linkedin: "https://www.linkedin.com/in/luciano-rapagna-12a4919b/"
 
 location: "Cabo Frio, RJ, Brazil"
 order: 5
@@ -21,7 +24,7 @@ slug: luciano-rapagna
 
 ## Presentation
 
-My name is Luciano, I am 45 years old, and I carry with me a deep connection to the sea since childhood. On my mother's side, I come from a family of traditional fishers from Arraial do Cabo, and I believe this heritage shaped a large part of who I am.
+My name is Luciano, I am 46 years old, and I carry with me a deep connection to the sea since childhood. On my mother's side, I come from a family of traditional fishers from Arraial do Cabo, and I believe this heritage shaped a large part of who I am.
 
 The ocean has always been present in my life, but reading *Twenty Thousand Leagues Under the Sea* awakened in me a lasting fascination with the underwater world and marine life.
 

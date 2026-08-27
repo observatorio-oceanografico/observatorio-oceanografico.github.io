@@ -9,11 +9,13 @@ role: "Biólogo · Pesquisador de Pós-doutorado"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/equipe/luciano-rapagna.jpg"
+avatar: "/assets/img/equipe/luciano-carvalho-rapagna.png"
 
 email: "lucianorapagna@id.uff.br"
 orcid: "0000-0002-9009-4463"
 lattes: "http://lattes.cnpq.br/8457148759274393"
+github: "https://github.com/luciusrapagna"
+linkedin: "https://www.linkedin.com/in/luciano-rapagna-12a4919b/"
 
 location: "Cabo Frio, RJ"
 order: 5
@@ -22,7 +24,7 @@ slug: luciano-rapagna
 
 ## Apresentação
 
-Meu nome é Luciano, tenho 45 anos e carrego comigo uma ligação profunda com o mar desde a infância. Venho de uma família, por parte de mãe, de pescadores tradicionais de Arraial do Cabo, e acredito que essa herança moldou grande parte de quem sou.
+Meu nome é Luciano, tenho 46 anos e carrego comigo uma ligação profunda com o mar desde a infância. Venho de uma família, por parte de mãe, de pescadores tradicionais de Arraial do Cabo, e acredito que essa herança moldou grande parte de quem sou.
 
 O oceano sempre esteve presente na minha vida, mas foi a leitura de *Vinte Mil Léguas Submarinas* que despertou em mim o fascínio definitivo pelo mundo submarino e pela vida marinha.
 
