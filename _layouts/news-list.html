@@ -1,0 +1,88 @@
+---
+layout: default
+---
+{%- comment -%}
+  news-list.html
+  Layout da listagem de notícias (/noticias/ e /en/news/), no estilo
+  "newsroom científico institucional". Não altera o layout individual
+  das notícias nem seus permalinks — apenas monta a página de índice
+  a partir de site.posts, filtrando por page.lang (como a listagem
+  original já fazia).
+{%- endcomment -%}
+
+{% if page.lang == "en" %}
+  {% assign o2_date_format = "%B %d, %Y" %}
+  {% assign o2_readmore = "Read more" %}
+  {% assign o2_empty = "No news published yet." %}
+{% else %}
+  {% assign o2_date_format = "%d/%m/%Y" %}
+  {% assign o2_readmore = "Leia mais" %}
+  {% assign o2_empty = "Nenhuma notícia publicada ainda." %}
+{% endif %}
+
+{% assign o2_news = site.posts | where: "lang", page.lang %}
+{% assign o2_featured = o2_news.first %}
+
+<div class="newsroom">
+
+  <header class="newsroom-header">
+    <h1 class="newsroom-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="newsroom-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  {% if o2_featured %}
+    {% assign o2_img = "" %}
+    {% assign o2_after_tag = o2_featured.content | split: "<img " %}
+    {% if o2_after_tag.size > 1 %}
+      {% assign o2_src_split = o2_after_tag[1] | split: 'src="' %}
+      {% if o2_src_split.size > 1 %}
+        {% assign o2_img = o2_src_split[1] | split: '"' | first %}
+      {% endif %}
+    {% endif %}
+
+    <section class="newsroom-featured">
+      <a class="newsroom-featured-media" href="{{ o2_featured.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        {% if o2_img != "" %}
+          <img src="{{ o2_img }}" alt="" loading="lazy">
+        {% else %}
+          <div class="newsroom-fallback"></div>
+        {% endif %}
+      </a>
+
+      <div class="newsroom-featured-body">
+        {% if o2_featured.categories.size > 0 %}
+          <div class="newsroom-badges">
+            {% for cat in o2_featured.categories limit: 3 %}
+              <span class="newsroom-badge">{{ cat | replace: '-', ' ' }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <p class="newsroom-date">{{ o2_featured.date | date: o2_date_format }}</p>
+
+        <h2 class="newsroom-featured-title">
+          <a href="{{ o2_featured.url | relative_url }}">{{ o2_featured.title }}</a>
+        </h2>
+
+        {% if o2_featured.excerpt %}
+          <p class="newsroom-excerpt">{{ o2_featured.excerpt | strip_html | truncatewords: 45 }}</p>
+        {% endif %}
+
+        <a class="newsroom-readmore" href="{{ o2_featured.url | relative_url }}">{{ o2_readmore }} →</a>
+      </div>
+    </section>
+
+    <div class="newsroom-grid">
+      {% for post in o2_news offset: 1 %}
+        {% include news-card.html post=post date_format=o2_date_format %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="newsroom-empty">{{ o2_empty }}</p>
+  {% endif %}
+
+</div>

@@ -1,0 +1,48 @@
+{% comment %}
+  news-card.html
+  Card usado na grade de "demais notícias" da listagem /noticias/ e /en/news/.
+
+  Parâmetros esperados quando este include é chamado (Liquid "include"):
+    post        -> objeto post do Jekyll
+    date_format -> string de formato de data (já resolvida por idioma no layout)
+
+  Sobre a imagem: os posts atuais não têm `image:` no front matter — a imagem
+  aparece como <img> dentro do corpo Markdown. Para não depender de editar os
+  13 posts existentes nesta etapa, extraímos aqui a primeira tag <img> do
+  conteúdo já renderizado (post.content) com um split simples. Se o post não
+  tiver nenhuma imagem, cai no placeholder discreto (.newsroom-fallback).
+{% endcomment %}
+{% assign o2_card_img = "" %}
+{% assign o2_card_after_tag = include.post.content | split: "<img " %}
+{% if o2_card_after_tag.size > 1 %}
+  {% assign o2_card_src_split = o2_card_after_tag[1] | split: 'src="' %}
+  {% if o2_card_src_split.size > 1 %}
+    {% assign o2_card_img = o2_card_src_split[1] | split: '"' | first %}
+  {% endif %}
+{% endif %}
+
+<article class="newsroom-card">
+  <a class="newsroom-card-media" href="{{ include.post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+    {% if o2_card_img != "" %}
+      <img src="{{ o2_card_img }}" alt="" loading="lazy">
+    {% else %}
+      <div class="newsroom-fallback"></div>
+    {% endif %}
+  </a>
+
+  <div class="newsroom-card-body">
+    {% if include.post.categories.size > 0 %}
+      <span class="newsroom-badge">{{ include.post.categories.first | replace: '-', ' ' }}</span>
+    {% endif %}
+
+    <h3 class="newsroom-card-title">
+      <a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+    </h3>
+
+    <p class="newsroom-card-date">{{ include.post.date | date: include.date_format }}</p>
+
+    {% if include.post.excerpt %}
+      <p class="newsroom-card-excerpt">{{ include.post.excerpt | strip_html | truncatewords: 20 }}</p>
+    {% endif %}
+  </div>
+</article>
