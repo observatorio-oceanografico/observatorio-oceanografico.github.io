@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news-single
 title: "Ocean Literacy in action: 37 applications for 4 positions"
 date: 2026-05-16
 lang: en

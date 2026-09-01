@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news-single
 title: "Observatório Oceanográfico presents turtle replica at III FLUHIDROS and XVII ENES"
 date: 2026-08-26
 lang: en

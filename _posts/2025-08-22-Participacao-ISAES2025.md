@@ -1,7 +1,7 @@
 ---
 title: "O Observatório Oceanográfico marca presença no ISAES 2025 com três trabalhos"
 date: 2025-08-18
-layout: post
+layout: news-single
 lang: pt
 excerpt: "O Prof. André L. Belem representou o Observatório Oceanográfico e o Observatório Antártico no ISAES 2025, apresentando três trabalhos produzidos pela equipe."
 ---

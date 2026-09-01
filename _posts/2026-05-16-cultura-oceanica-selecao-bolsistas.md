@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news-single
 title: "Cultura Oceânica em ação: 37 candidaturas para 4 vagas"
 date: 2026-05-16
 lang: pt

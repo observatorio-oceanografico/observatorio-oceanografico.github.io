@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news-single
 title: "Observatório Oceanográfico apresenta réplica de Tartaruga no III FLUHIDROS e XVII ENES"
 date: 2026-08-26
 lang: pt

@@ -1,7 +1,7 @@
 ---
 title: "Observatório Oceanográfico participates in ISAES 2025 with three contributions"
 date: 2025-08-18
-layout: post
+layout: news-single
 lang: en
 excerpt: "Prof. André L. Belem represented the Observatório Oceanográfico and the Antarctic Observatory at ISAES 2025, presenting three contributions developed by the research team."
 ---

@@ -1,0 +1,190 @@
+---
+layout: default
+---
+{%- comment -%}
+  news-single.html
+  Layout editorial para as páginas individuais de notícias (posts de
+  _posts/), no mesmo estilo "newsroom científico institucional" da
+  listagem (/noticias/ e /en/news/). Não altera a listagem, não altera
+  permalinks e não depende de campos de front matter que os 13 posts
+  atuais não têm (image, caption, related_project etc.).
+
+  IMAGEM PRINCIPAL (hero)
+  ------------------------
+  Os posts atuais não têm `image:` no front matter — a primeira imagem
+  está embutida no corpo Markdown, sempre no formato:
+
+    <p align="center">
+      <img src="..." alt="..." width="350">
+    </p>
+
+  Para usar essa imagem como hero sem duplicá-la dentro do corpo, o
+  bloco abaixo extrai o primeiro `<p align="center">...</p>` que
+  contenha um <img> e remove exatamente esse bloco do conteúdo antes de
+  renderizar o corpo da notícia. O atributo `alt` da imagem é reaproveitado
+  como legenda (figcaption), já que os posts não têm um campo de legenda
+  dedicado.
+
+  Limitação conhecida: essa extração assume que a primeira imagem do post
+  está sozinha dentro de um `<p align="center">...</p>` — padrão usado em
+  todos os 13 posts existentes. Um post futuro que traga a primeira
+  imagem fora desse wrapper (por exemplo, ![]() misturado com texto no
+  mesmo parágrafo) ainda mostra a imagem como hero (fallback abaixo), mas
+  ela pode não ser removida do corpo, causando duplicação nesse caso
+  específico. Isso deixa de ser um problema quando os posts migrarem para
+  `image:` no front matter (migração tratada em etapa separada).
+{%- endcomment -%}
+
+{% if page.lang == "en" %}
+  {% assign o2_date_format = "%B %d, %Y" %}
+  {% assign o2_back_url = "/en/news/" %}
+  {% assign o2_back_label = "← News" %}
+  {% assign o2_related_project_heading = "Related project" %}
+  {% assign o2_related_news_heading = "Related news" %}
+{% else %}
+  {% assign o2_date_format = "%d/%m/%Y" %}
+  {% assign o2_back_url = "/noticias/" %}
+  {% assign o2_back_label = "← Notícias" %}
+  {% assign o2_related_project_heading = "Projeto relacionado" %}
+  {% assign o2_related_news_heading = "Outras notícias" %}
+{% endif %}
+
+{% assign o2_body = content %}
+{% assign o2_hero_img = "" %}
+{% assign o2_hero_alt = "" %}
+
+{% assign o2_p_marker = '<p align="center">' %}
+{% assign o2_p_split = content | split: o2_p_marker %}
+
+{% if o2_p_split.size > 1 %}
+  {% assign o2_pblock = o2_p_split[1] | split: "</p>" | first %}
+
+  {% if o2_pblock contains "<img" %}
+    {% assign o2_src_split = o2_pblock | split: 'src="' %}
+    {% if o2_src_split.size > 1 %}
+      {% assign o2_hero_img = o2_src_split[1] | split: '"' | first %}
+    {% endif %}
+
+    {% assign o2_alt_split = o2_pblock | split: 'alt="' %}
+    {% if o2_alt_split.size > 1 %}
+      {% assign o2_hero_alt = o2_alt_split[1] | split: '"' | first %}
+    {% endif %}
+
+    {% if o2_hero_img != "" %}
+      {% assign o2_full_block = o2_p_marker | append: o2_pblock | append: "</p>" %}
+      {% assign o2_body = content | remove_first: o2_full_block %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% if o2_hero_img == "" %}
+  {% comment %} Fallback: post sem o wrapper <p align="center">. Localiza a primeira <img> solta no conteúdo; usada como hero, mas não é removida do corpo (ver limitação acima). {% endcomment %}
+  {% assign o2_img_split = content | split: "<img " %}
+  {% if o2_img_split.size > 1 %}
+    {% assign o2_src_split2 = o2_img_split[1] | split: 'src="' %}
+    {% if o2_src_split2.size > 1 %}
+      {% assign o2_hero_img = o2_src_split2[1] | split: '"' | first %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% comment %}
+  CONTEÚDO / PROJETO RELACIONADO
+  --------------------------------
+  Não há campo de front matter ligando um post a um projeto. Em vez de
+  inventar essa relação, aproveitamos um dado que já existe nos dois
+  lados: o slug do arquivo do projeto (derivado de `path`, ex.:
+  _projects/cultura-oceanica.pt.md -> "cultura-oceanica") costuma
+  coincidir com uma das categories do post. Só mostramos a seção se
+  essa coincidência realmente existir.
+{% endcomment %}
+{% assign o2_related_project = nil %}
+{% if page.categories %}
+  {% for o2_proj in site.projects %}
+    {% if o2_related_project == nil and o2_proj.lang == page.lang %}
+      {% assign o2_proj_slug = o2_proj.path | split: '/' | last | split: '.' | first %}
+      {% if page.categories contains o2_proj_slug %}
+        {% assign o2_related_project = o2_proj %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% comment %}
+  OUTRAS NOTÍCIAS RELACIONADAS
+  -------------------------------
+  Mesma lógica de "não inventar relações": só aparecem outras notícias,
+  no mesmo idioma, que compartilhem a categoria principal deste post.
+  Se o post não tiver categoria, a seção simplesmente não é exibida.
+{% endcomment %}
+{% assign o2_empty = "" | split: "," %}
+{% assign o2_related_news = o2_empty %}
+{% assign o2_primary_cat = page.categories | first %}
+{% if o2_primary_cat %}
+  {% assign o2_related_news = site.posts | where: "lang", page.lang | where_exp: "p", "p.categories contains o2_primary_cat" | where_exp: "p", "p.url != page.url" %}
+{% endif %}
+
+<div class="newsroom-single">
+
+  <a class="newsroom-back" href="{{ o2_back_url | relative_url }}">{{ o2_back_label }}</a>
+
+  <article class="newsroom-article">
+    <header class="newsroom-article-header">
+      {% if page.categories.size > 0 %}
+        <div class="newsroom-badges">
+          {% for cat in page.categories limit: 3 %}
+            <span class="newsroom-badge">{{ cat | replace: '-', ' ' }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <p class="newsroom-date">{{ page.date | date: o2_date_format }}</p>
+
+      <h1 class="newsroom-article-title">{{ page.title }}</h1>
+
+      {% if page.excerpt %}
+        <p class="newsroom-article-lead">{{ page.excerpt | strip_html | strip }}</p>
+      {% endif %}
+    </header>
+
+    {% if o2_hero_img != "" %}
+      <figure class="newsroom-hero">
+        <img src="{{ o2_hero_img }}" alt="{{ o2_hero_alt | escape }}">
+        {% if o2_hero_alt != "" %}
+          <figcaption class="newsroom-hero-caption">{{ o2_hero_alt | escape }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    <div class="newsroom-article-body">
+      {{ o2_body }}
+    </div>
+  </article>
+
+  {% if o2_related_project or o2_related_news.size > 0 %}
+    <aside class="newsroom-related">
+
+      {% if o2_related_project %}
+        <div class="newsroom-related-project">
+          <h2 class="newsroom-related-heading">{{ o2_related_project_heading }}</h2>
+          <a class="newsroom-related-project-link" href="{{ o2_related_project.permalink | relative_url }}">
+            {{ o2_related_project.title }} →
+          </a>
+        </div>
+      {% endif %}
+
+      {% if o2_related_news.size > 0 %}
+        <div class="newsroom-related-news">
+          <h2 class="newsroom-related-heading">{{ o2_related_news_heading }}</h2>
+          <div class="newsroom-grid">
+            {% for p in o2_related_news limit: 3 %}
+              {% include news-card.html post=p date_format=o2_date_format %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+    </aside>
+  {% endif %}
+
+</div>

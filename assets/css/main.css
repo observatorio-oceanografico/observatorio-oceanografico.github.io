@@ -1266,3 +1266,307 @@ body.internal .content h2 {
     gap: 1.5rem;
   }
 }
+
+/* =========================================================
+   NEWSROOM — página individual de notícia (news-single.html)
+
+   Composição editorial em duas larguras dentro do mesmo painel escuro
+   (body.internal .content):
+
+     - um container geral mais largo (~1040px) que alinha o link de
+       volta, o cabeçalho, o hero e a seção relacionada;
+     - dentro dele, uma coluna de leitura mais estreita (~740px) só
+       para o cabeçalho (metadata/título/lead) e o corpo do texto.
+
+   O hero fica mais largo que a coluna de texto (até ~1000px), mas
+   dentro do container geral — nunca "vazando" para a largura total
+   da tela.
+
+   O próprio painel (body.internal .content) é alargado só quando
+   contém .newsroom-single como filho direto, ou seja, só nesta
+   página — via :has(), sem tocar em default.html nem nas demais
+   páginas internas (Portfólio, Pessoas, Projetos, Recursos...).
+   Navegadores sem suporte a :has() simplesmente mantêm o painel no
+   max-width padrão do site (900px): a página continua legível e
+   funcional, só sem o alargamento extra.
+
+   Várias regras abaixo são prefixadas com "body.internal .content"
+   mesmo dentro deste namespace: é necessário porque as regras
+   tipográficas globais (linha 108-128) já têm essa mesma cadeia de
+   seletores aplicada a p/h1/h2 e, por especificidade CSS, venceriam
+   um seletor de classe simples como ".newsroom-article-title" sem
+   esse prefixo. Isso NÃO altera a tipografia global — continua
+   restrito às classes .newsroom-article-* usadas somente aqui.
+   ========================================================= */
+
+@media (min-width: 1025px) {
+  body.internal .content:has(> .newsroom-single) {
+    max-width: 1200px;
+    padding: calc(4rem + 40px) 3rem 4rem 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body.internal .content:has(> .newsroom-single) {
+    max-width: 900px;
+    padding: calc(4rem + 40px) 2.5rem 4rem 2.5rem;
+  }
+}
+
+.newsroom-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #9fd3c7;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.newsroom-back:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* Container editorial geral (~1040px) — alinha o link de volta, o
+   cabeçalho, o hero e o bloco relacionado num mesmo eixo central. */
+@media (min-width: 769px) {
+  .newsroom-back,
+  .newsroom-article,
+  .newsroom-related {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Cabeçalho — coluna de leitura estreita (~740px), com espaçamento
+   vertical generoso entre metadata, título, lead e imagem principal. */
+
+.newsroom-article-header {
+  margin-bottom: 2.8rem;
+}
+
+@media (min-width: 769px) {
+  .newsroom-article-header {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.newsroom-article-header .newsroom-badges {
+  margin-bottom: 1.1rem;
+}
+
+/* .newsroom-date é compartilhado com a listagem (news-list.html);
+   este seletor mais específico só afeta a data dentro do cabeçalho
+   da notícia individual, sem tocar no card da listagem. */
+body.internal .content .newsroom-article-header .newsroom-date {
+  margin-bottom: 1.2rem;
+}
+
+body.internal .content .newsroom-article-title {
+  font-size: clamp(1.9rem, 4.2vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.4rem 0;
+}
+
+body.internal .content .newsroom-article-lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  opacity: 0.85;
+  margin: 0;
+}
+
+/* Imagem principal (hero) — mais larga que a coluna de texto
+   (até ~1000px), mas ainda dentro do container geral (~1040px).
+   Sem crop forçado: as imagens atuais têm proporções bem variadas
+   (quadradas, 16:9, retrato), então usamos object-fit: contain sobre
+   um fundo neutro em vez de cover, que cortaria conteúdo. */
+
+.newsroom-hero {
+  margin: 0 0 3.2rem 0;
+}
+
+@media (min-width: 769px) {
+  .newsroom-hero {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.newsroom-hero img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+}
+
+.newsroom-hero-caption {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.6;
+  text-align: center;
+}
+
+/* Corpo — coluna de leitura estreita (~740px), com tipografia própria
+   restrita a .newsroom-article-body (não altera a tipografia global
+   de body.internal .content, que continua valendo para o resto do
+   site: Portfólio, Pessoas, Projetos, Recursos etc.). */
+
+@media (min-width: 769px) {
+  .newsroom-article-body {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body.internal .content .newsroom-article-body p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0 0 1.4rem 0;
+}
+
+body.internal .content .newsroom-article-body h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 2.4rem 0 1rem 0;
+}
+
+.newsroom-article-body h3 {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  font-weight: 600;
+  margin: 2rem 0 0.8rem 0;
+}
+
+.newsroom-article-body ul,
+.newsroom-article-body ol {
+  margin: 0 0 1.4rem 0;
+  padding-left: 1.4rem;
+  line-height: 1.75;
+}
+
+.newsroom-article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.newsroom-article-body a {
+  color: #9fd3c7;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.newsroom-article-body a:hover {
+  color: #c3e8de;
+}
+
+.newsroom-article-body blockquote {
+  margin: 1.8rem 0;
+  padding: 0.3rem 0 0.3rem 1.2rem;
+  border-left: 3px solid rgba(159, 211, 199, 0.5);
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.newsroom-article-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.6rem auto;
+  border-radius: 8px;
+}
+
+/* Conteúdo relacionado / outras notícias */
+
+.newsroom-related {
+  margin: 4rem auto 0 auto;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+body.internal .content .newsroom-related-heading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin: 0 0 1rem 0;
+}
+
+.newsroom-related-project {
+  margin-bottom: 2.5rem;
+}
+
+.newsroom-related-project-link {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.9rem 1.2rem;
+  background: rgba(159, 211, 199, 0.1);
+  border: 1px solid rgba(159, 211, 199, 0.35);
+  border-radius: 10px;
+}
+
+.newsroom-related-project-link:hover {
+  background: rgba(159, 211, 199, 0.18);
+}
+
+/* Tablet (769–1024px) — o painel já fica mais estreito (900px, regra
+   acima); reduzimos a diferença entre hero e corpo em vez de manter
+   os ~1000px/~740px do desktop, que não caberiam com folga. */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .newsroom-hero {
+    max-width: 100%;
+  }
+
+  .newsroom-article-header,
+  .newsroom-article-body {
+    max-width: 620px;
+  }
+}
+
+/* Mobile (≤ 768px) — sem containers largos: tudo ocupa a largura
+   disponível dentro do padding do painel (já reduzido pela regra
+   mobile existente de body.internal .content, linha ~337), com
+   espaçamentos e imagem proporcionalmente menores. */
+@media (max-width: 768px) {
+  .newsroom-article-header {
+    margin-bottom: 2rem;
+  }
+
+  body.internal .content .newsroom-article-title {
+    margin-bottom: 1rem;
+  }
+
+  .newsroom-hero {
+    margin-bottom: 2.2rem;
+  }
+
+  .newsroom-hero img {
+    max-height: 340px;
+  }
+
+  body.internal .content .newsroom-article-body p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .newsroom-related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: "Article with participation of the Oceanographic Observatory is published in Science of the Total Environment"
 date: 2026-05-13
-layout: post
+layout: news-single
 lang: en
 excerpt: "Article published in Science of the Total Environment, co-authored by Prof. André L. Belem, analyzes how oceanographic processes such as upwelling, downwelling and water mass circulation control the fluxes of trace metals and organic carbon on the continental margin of Cabo Frio. The O²/UFF contribution focuses on the interpretation of physical oceanography from a data series initiated in the context of the project that brought André to UFF, in Rio de Janeiro, in 2011 — and which still holds many results to be published."
 ---
