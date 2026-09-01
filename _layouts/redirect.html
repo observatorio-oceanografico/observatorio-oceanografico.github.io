@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{%- comment -%}
+  redirect.html
+  Layout mínimo para páginas estáticas de redirecionamento (stubs em
+  _redirects/). Usado apenas para preservar as 13 URLs antigas das
+  notícias após a migração de permalinks para /noticias/<slug>/ e
+  /en/news/<slug>/. Não estende _layouts/default.html de propósito:
+  são páginas técnicas de transição, não conteúdo do site, e não devem
+  herdar navegação, rodapé ou qualquer elemento visual do newsroom.
+
+  Cada stub define no front matter:
+    permalink    -> a URL antiga exata que está sendo preservada
+    redirect_to  -> a nova URL limpa do post
+    title        -> título simples para a aba do navegador
+    lang         -> "pt" ou "en", só para o atributo lang do <html>
+{%- endcomment -%}
+<html lang="{{ page.lang | default: 'pt' }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
+  <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+</head>
+<body>
+  <p>
+    {% if page.lang == "en" %}
+      This page has moved. <a href="{{ page.redirect_to | relative_url }}">Continue to the new address</a>.
+    {% else %}
+      Esta página mudou de endereço. <a href="{{ page.redirect_to | relative_url }}">Clique aqui para continuar</a>.
+    {% endif %}
+  </p>
+</body>
+</html>

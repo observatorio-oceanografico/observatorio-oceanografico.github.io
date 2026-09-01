@@ -3,11 +3,12 @@ title: "Observatório Oceanográfico participates in ISAES 2025 with three contr
 date: 2025-08-18
 layout: news-single
 lang: en
+permalink: /en/news/isaes2025-participation/
 excerpt: "Prof. André L. Belem represented the Observatório Oceanográfico and the Antarctic Observatory at ISAES 2025, presenting three contributions developed by the research team."
 ---
 
 <p align="center">
-  <img src="{{ '/assets/img/noticias/2025-08-22_ISAES_PuntaArenas.jpg' | relative_url }}" alt="O2 participation at ISAES 2025 in Punta Arenas" width="350">
+  <img src="{{ '/assets/img/noticias/2025-08-22_ISAES_PuntaArenas.jpeg' | relative_url }}" alt="O2 participation at ISAES 2025 in Punta Arenas" width="350">
 </p>
 
 The **Observatório Oceanográfico (O²/UFF)** participated in **ISAES 2025 – International Symposium on Antarctic Earth Sciences**, held in **Punta Arenas, Chile**, one of the most relevant international events dedicated to research on the Antarctic continent.

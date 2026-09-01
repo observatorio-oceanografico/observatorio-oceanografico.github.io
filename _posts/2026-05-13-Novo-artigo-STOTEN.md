@@ -3,6 +3,7 @@ title: "Artigo com participação do Observatório Oceanográfico é publicado n
 date: 2026-05-13
 layout: news-single
 lang: pt
+permalink: /noticias/novo-artigo-stoten/
 excerpt: "Artigo publicado na Science of the Total Environment, com coautoria do Prof. André L. Belem, analisa como processos oceanográficos como ressurgência, subsidência e circulação de massas d’água controlam os fluxos de metais-traço e carbono orgânico na margem continental de Cabo Frio. A contribuição do O²/UFF se concentra na interpretação da oceanografia física de uma série de dados iniciada no contexto do projeto que trouxe André para a UFF, no Rio de Janeiro, em 2011 — e que ainda guarda muitos resultados a serem publicados."
 ---
 

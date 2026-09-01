@@ -1,7 +1,7 @@
 title: Observatório Oceanográfico
 description: Laboratório interdisciplinar da UFF dedicado às ciências do mar, mudanças climáticas e tecnologias ambientais
 baseurl: ""
-url: https://observatorio-oceanografico.github.io
+url: https://observatoriooceanografico.org
 
 collections:
   pages:
@@ -12,7 +12,9 @@ collections:
     output: true
   resources:
     output: true
-    permalink: /recursos/:name/   
+    permalink: /recursos/:name/
+  redirects:
+    output: true
 
 defaults:
   - scope:

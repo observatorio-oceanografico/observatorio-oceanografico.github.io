@@ -3,6 +3,7 @@ layout: news-single
 title: "Cultura Oceânica em ação: 37 candidaturas para 4 vagas"
 date: 2026-05-16
 lang: pt
+permalink: /noticias/cultura-oceanica-selecao-bolsistas/
 excerpt: "As ações de Cultura Oceânica do Observatório Oceanográfico receberam 37 candidaturas para 4 vagas, reforçando o compromisso com extensão, educação ambiental e comunicação científica."
 categories: [cultura-oceanica, extensao, observatorio-oceanografico]
 tags: [Cultura Oceânica, Ocean Literacy, Extensão Universitária, Comunicação Científica, Educação Ambiental]

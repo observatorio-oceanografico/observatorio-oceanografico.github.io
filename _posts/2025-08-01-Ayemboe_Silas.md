@@ -3,11 +3,12 @@ title: "Ayemboê 2025: O Observatório Oceanográfico e o Café — uma conexão
 date: 2025-08-01
 layout: news-single
 lang: pt
+permalink: /noticias/ayemboe_silas/
 excerpt: "A Iniciativa Ayemboê do O² está de volta! Agora com foco em mudanças climáticas, índices de seca e produtividade do café."
 ---
 
 <p align="center">
-  <img src="{{ '/assets/img/noticias/2025-08-01_Ayemboe_Silas.jpg' | relative_url }}" alt="Ayemboê e pesquisa em café" width="350">
+  <img src="{{ '/assets/img/noticias/2025-08-01_Ayemboe_Silas.jpeg' | relative_url }}" alt="Ayemboê e pesquisa em café" width="350">
 </p>
 
 **O que o Observatório Oceanográfico tem a ver com café?**  

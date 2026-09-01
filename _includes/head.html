@@ -4,6 +4,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Canonical: aponta sempre para a URL do próprio page.url (ex.: as
+       novas URLs limpas de notícias, /noticias/<slug>/ e /en/news/<slug>/).
+       O site não tinha nenhum mecanismo de canonical antes disso. -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
   <!-- Favicon -->
   <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
 

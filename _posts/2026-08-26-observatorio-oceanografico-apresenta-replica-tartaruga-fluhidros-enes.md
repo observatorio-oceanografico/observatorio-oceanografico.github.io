@@ -3,6 +3,7 @@ layout: news-single
 title: "Observatório Oceanográfico apresenta réplica de Tartaruga no III FLUHIDROS e XVII ENES"
 date: 2026-08-26
 lang: pt
+permalink: /noticias/observatorio-oceanografico-apresenta-replica-tartaruga-fluhidros-enes/
 excerpt: "Com o tema \"Cultura Oceânica como estratégia para a Educação Ambiental em territórios costeiros\", o projeto ICO-FES levou a réplica em tamanho real da tartaruga \"Kûá\" ao encontro nacional promovido pela ABRHidro para destacar a importância da comunicação científica e das representações táteis no ensino."
 categories: [cultura-oceanica, extensao, observatorio-oceanografico]
 tags: [Cultura Oceânica, Observatorio Oceanografico, FluHidros, ENES]

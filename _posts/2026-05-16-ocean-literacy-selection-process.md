@@ -3,6 +3,7 @@ layout: news-single
 title: "Ocean Literacy in action: 37 applications for 4 positions"
 date: 2026-05-16
 lang: en
+permalink: /en/news/ocean-literacy-selection-process/
 excerpt: "The Observatorio Oceanografico Ocean Literacy initiatives received 37 applications for 4 positions, highlighting strong engagement with university extension, environmental education, and science communication."
 categories: [cultura-oceanica, extensao, observatorio-oceanografico]
 tags: [Ocean Culture, Ocean Literacy, University Extension, Science Communication, Environmental Education]

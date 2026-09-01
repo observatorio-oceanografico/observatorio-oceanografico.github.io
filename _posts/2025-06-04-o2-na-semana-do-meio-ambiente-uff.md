@@ -3,6 +3,7 @@ title: "O2 na I Semana do Meio Ambiente da UFF"
 date: 2025-06-04
 layout: news-single
 lang: pt
+permalink: /noticias/o2-na-semana-do-meio-ambiente-uff/
 excerpt: "De 4 a 7 de junho, o Observatório Oceanográfico participou ativamente da I Semana do Meio Ambiente da UFF, promovida pela OES."
 ---
 

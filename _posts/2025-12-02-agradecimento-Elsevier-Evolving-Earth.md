@@ -3,6 +3,7 @@ title: "Reconhecimento Internacional na Revista *Evolving Earth* (Elsevier)"
 date: 2025-12-02
 layout: news-single
 lang: pt
+permalink: /noticias/agradecimento-elsevier-evolving-earth/
 excerpt: "O coordenador do Observatório Oceanográfico, Prof. André L. Belem, foi reconhecido pela Elsevier como um dos revisores selecionados pelos editores da revista Evolving Earth no ciclo 2024–2025."
 ---
 

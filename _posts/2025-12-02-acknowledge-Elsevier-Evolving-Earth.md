@@ -3,6 +3,7 @@ title: "International Recognition in the Journal *Evolving Earth* (Elsevier)"
 date: 2025-12-02
 layout: news-single
 lang: en
+permalink: /en/news/acknowledge-elsevier-evolving-earth/
 excerpt: "The coordinator of the Observatório Oceanográfico, Prof. André L. Belem, was recognized by Elsevier as one of the reviewers selected by the editors of the journal *Evolving Earth* for the 2024–2025 cycle."
 ---
 

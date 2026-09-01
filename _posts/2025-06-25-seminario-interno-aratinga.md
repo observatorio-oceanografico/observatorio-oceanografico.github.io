@@ -3,6 +3,7 @@ title: "1º Seminário Interno do Projeto ARA-TINGA"
 date: 2025-06-25
 layout: news-single
 lang: pt
+permalink: /noticias/seminario-interno-aratinga/
 excerpt: "Hoje foi dia de abrir os trabalhos do nosso projeto com um seminário interno cheio de trocas ricas e inspiradoras."
 ---
 <p align="center">

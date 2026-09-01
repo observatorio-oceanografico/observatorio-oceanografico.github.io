@@ -3,6 +3,7 @@ layout: news-single
 title: "Observatório Oceanográfico presents turtle replica at III FLUHIDROS and XVII ENES"
 date: 2026-08-26
 lang: en
+permalink: /en/news/o2-presents-turtle-replica-fluhidros-enes/
 excerpt: "Under the theme \"Ocean Culture as a strategy for Environmental Education in coastal territories,\" the ICO-FES project brought the life-size replica of the turtle \"Kûá\" to the national meeting promoted by ABRHidro, highlighting the importance of science communication and tactile teaching resources."
 categories: [cultura-oceanica, extensao, observatorio-oceanografico]
 tags: [Ocean Culture, Observatorio Oceanografico, FluHidros, ENES]
