@@ -5,8 +5,9 @@ lang: en
 permalink: /people/gabriel-schimidel/
 alt_lang: /pessoas/gabriel-schimidel/
 
-role: "Undergraduate Research Fellow (CNPq)"
-affiliation: "Undergraduate Program in Water Resources and Environmental Engineering"
+role: "PhD Student, PPG-DOT/UFF · INCT-ReNOMO Fellow"
+affiliation: "Graduate Program in Ocean and Earth Dynamics (PPG-DOT)"
+affiliation_url: "https://ppgdot-uff.com.br/"
 
 avatar: "/assets/img/equipe/gabriel-schimidel.jpg"
 
@@ -17,20 +18,22 @@ scholar: "https://scholar.google.com.br/citations?user=5eyoNxUAAAAJ&hl=en"
 lattes: "http://lattes.cnpq.br/8948368662954411"
 
 location: "Niterói, RJ, Brazil"
-order: 30
+order: 12
 slug: gabriel-schimidel
 ---
 
 ## Presentation
 
-Hello! My name is Gabriel Schimidel Ramos de Oliveira, I am 25 years old, and I am currently pursuing a degree in Water Resources and Environmental Engineering at the Federal Fluminense University (UFF) 🎓. Since the early semesters of my undergraduate studies, I have developed a strong interest in Data Science applied to environmental sciences, with a particular focus on climatology, hydrology, and numerical modeling. I am especially interested in understanding how statistical techniques and Artificial Intelligence can contribute to solving environmental challenges 🤖🌱.
+Hello! My name is Gabriel Schimidel Ramos de Oliveira, and I am currently a PhD student in the Graduate Program in Ocean and Earth Dynamics at the Federal Fluminense University (PPG-DOT/UFF), where I work as an INCT-ReNOMO fellow 🎓.
 
-Currently, as an Undergraduate Research Fellow, I am conducting research focused on forecasting extreme wave events using machine learning 🌊💻. This project has provided me with a deeper understanding of how machine learning models can be applied within the environmental field.
+My academic path began in Water Resources and Environmental Engineering at UFF, where I developed a strong interest in Data Science applied to the environment, particularly in climatology, hydrology, oceanography, and numerical modeling. Since then, I have been seeking to understand how statistical methods, machine learning, and Artificial Intelligence can contribute to the investigation of environmental processes 🤖🌱.
 
-In my free time, surfing and the ocean are my greatest passions, whether I am practicing the sport or simply following it 🏄. I also enjoy spending time at home with my dog, Caramelo 🐾, and my family. Whenever possible, I like to use my free time to watch TV series and anime, play video games, and study topics that interest me 📚.
+My research experience includes developing models aimed at forecasting extreme wave events through machine learning 🌊💻. In my PhD, I continue to deepen this interface between data, modeling, and ocean processes, now within the scope of INCT-ReNOMO's activities.
 
-You can find some of my projects on my [github](https://github.com/Schimidel) 💻.
+In my free time, surfing and the ocean remain some of my greatest passions, whether following or practicing it 🏄. I also enjoy spending time with my dog, Caramelo 🐾, and with my family, as well as watching TV series and anime, playing video games, and studying topics that interest me 📚.
 
-Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/gabriel-schimidel-1337a8255/) 🤝.
+You can find some of my projects on [GitHub](https://github.com/Schimidel) 💻
 
-You can also follow my research and publications on [ResearchGate](https://www.researchgate.net/profile/Gabriel-Ramos-De-Oliveira?ev=hdr_xprf) 📝.
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/gabriel-schimidel-1337a8255/) 🤝
+
+And follow my work on [ResearchGate](https://www.researchgate.net/profile/Gabriel-Ramos-De-Oliveira?ev=hdr_xprf) 📝
