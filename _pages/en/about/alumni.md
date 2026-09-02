@@ -11,10 +11,17 @@ alt_lang: /sobre/alumni/
 
   <p>
     Former members of the Observatório Oceanográfico who have since pursued
-    other academic or professional paths.
+    other academic or professional paths. The entries below preserve the
+    historical activity/period information exactly as recorded in the
+    original source, which was only kept in Portuguese; missing fields
+    (Lattes or LinkedIn not available) were left blank rather than
+    invented or translated.
   </p>
 
-  <p class="alumni-status">
-    This section is currently under development and is being gradually updated.
-  </p>
+  <div class="alumni-list">
+    {% assign alumni = site.data.alumni | sort: "name" %}
+    {% for person in alumni %}
+      {% include alumni-card.html person=person %}
+    {% endfor %}
+  </div>
 </div>

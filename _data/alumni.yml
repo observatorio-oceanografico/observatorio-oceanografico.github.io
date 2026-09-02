@@ -1,0 +1,151 @@
+# Alumni (ex-membros) do Observatório Oceanográfico.
+#
+# Dados recuperados do histórico Git (commit 4268e18^:_includes/alumni-o2.html,
+# gerado originalmente por utils/gera_alumni.html.py a partir de utils/alumni.xlsx,
+# uma planilha mantida no Google Drive). Migrados sem correções ou traduções —
+# campos ausentes na fonte original (lattes/linkedin desconhecidos, ou com
+# valor "nan" produzido pelo gerador) foram deixados em branco.
+#
+# Campos:
+#   name     — nome completo
+#   activity — atuação / período de vínculo (texto livre, como na fonte original)
+#   lattes   — URL do Currículo Lattes (opcional)
+#   linkedin — URL do LinkedIn (opcional)
+
+- name: "Anna Amandi Palma Diniz Baker"
+  activity: "IC voluntário (2019), projeto: DINAMO - Dinâmica Costeira e Modelagem Oceânica. Tempo de vínculo: 3 meses."
+  lattes: "http://lattes.cnpq.br/6396033146190010"
+  linkedin: "https://www.linkedin.com/in/annaamandi/"
+
+- name: "Ana Maria Roland Rodrigues Lima"
+  activity: "PIBIC/UFF (2016), projeto: A Dinâmica Oceano-Atmosfera na assinatura da Zona de Convergência do Atlântico Sul e sua influência na variabilidade climática no Estado do Rio de Janeiro. Tempo de vínculo: 6 meses; PIBIC/UFF (2016–2017), projeto: Assinatura da Zona de Convergência do Atlântico Sul e sua Influência na Dinâmica Oceano-Atmosfera e nos Processos Biogeoquímicos da Plataforma Continental do Sudeste do Brasil. Tempo de vínculo: 9 meses."
+  lattes: "http://lattes.cnpq.br/9383816906052325"
+  linkedin: "https://www.linkedin.com/in/ana-roland-2b2783132/"
+
+- name: "Andre Meija Grijó"
+  activity: "PIBIC (2015), projeto: Edital Ciências do Mar II 43/2013. Tempo de vínculo: 6 meses."
+  linkedin: "https://www.linkedin.com/in/andre-grij%C3%B3-70b53695/"
+
+- name: "Beatriz Morandini"
+  activity: "PIBIC (2017), projeto: FAPERJ A Dinâmica Oceano-Atmosfera na assinatura da Zona de Convergência do Atlântico Sul e sua influência na variabilidade climática no Estado do Rio de Janeiro. Tempo de vínculo: 5 meses."
+
+- name: "Bruno Mateus Conceicao da Silva"
+  activity: "Bolsisa PROAES (2017–2018), projeto: PROAES-O2. Tempo de vínculo: 11 meses."
+  lattes: "http://lattes.cnpq.br/8478593635085427"
+
+- name: "Cauê Machado Tompson"
+  activity: "IC Voluntário (2019–2020), projeto de Oceanografia Operacional no O2 (cooperação com o Projeto Ressurgência/UFF). Tempo de vínculo: 5 meses."
+  lattes: "http://lattes.cnpq.br/4639960424995624"
+
+- name: "Erick Santana Amâncio"
+  activity: "mestrado PGEB (2015–2017), Tempo de vínculo: 27 meses."
+
+- name: "Gabriel Carvalho"
+  activity: "graduação (2018), Estagiário UFF (contrato de 04/2018 a 12/2018: 9 meses). Tempo de vínculo: 8 meses."
+
+- name: "Hanna Roditi Lilenbaum"
+  activity: "graduação (2017–2018), orientada de TCC (defendeu em 12/17/2017). Tempo de vínculo: 11 meses."
+
+- name: "Heloísa Dias Ferreira da Silva"
+  activity: "graduação (2017–2018), projeto: PROAES-O2 Tempo de vínculo: 11 meses; graduação (2018–2018), projeto: PROAES-O2 Tempo de vínculo: 2 meses; PIBIC (2018–2020), projeto DINAMO/PIBIC (A partir de agosto/2018). Tempo de vínculo: 24 meses."
+  linkedin: "https://www.linkedin.com/in/heloisadiasf/"
+
+- name: "Isabella Monteiro Amaral Antunes"
+  activity: "voluntario (2018–2019), projeto: DINAMO - Dinâmica Costeira e Modelagem Oceânica. Tempo de vínculo: 13 meses."
+  linkedin: "https://www.linkedin.com/in/isabella-antunes-1bb575165/"
+
+- name: "João Antonio Calazans do Prado Carvalho"
+  activity: "PIBIC (2017–2018), Tempo de vínculo: 8 meses."
+
+- name: "Jonas Carvalho Takeo"
+  activity: "doutorado PPG-DOT (2017-2019), tempo de vínculo: 24 meses."
+  linkedin: "https://www.linkedin.com/in/jonas-takeo-carvalho-b3761022/"
+
+- name: "Julia da Silva Machado"
+  activity: "graduação (2017–2019), projeto: PROAES-O2 Tempo de vínculo: 22 meses; estagiario (2019–2019), Estágio interno Tempo de vínculo: 5 meses."
+
+- name: "Juliana Jannuzzi"
+  activity: "estagiaria graduação (2018–2019), projeto de Oceanografia Operacional no O2 (cooperação com o Projeto Ressurgência/UFF). Tempo de vínculo: 13 meses."
+  linkedin: "https://www.linkedin.com/in/juliana-jannuzzi-4a2697102/"
+
+- name: "Kamila Lopes Adão"
+  activity: "IC voluntário (2019–2020), projeto: DINAMO - Dinâmica Costeira e Modelagem Oceânica. Tempo de vínculo: 10 meses."
+
+- name: "Karyne Rodrigues de Almeida"
+  activity: "PIBIC (2015–2017), projeto FAPERJ A Dinâmica Oceano-Atmosfera na assinatura da Zona de Convergência do Atlântico Sul e sua influência na variabilidade climática no Estado do Rio de Janeiro. Tempo de vínculo: 19 meses."
+
+- name: "Laura Corrêa Saldanha da Gama"
+  activity: "graduação (2018–2018), projeto: Agronautas (voluntária em 03/2018). Tempo de vínculo: 9 meses."
+
+- name: "Letícia Fonseca Catharino"
+  activity: "graduação (2018–2018), TCC (defendeu em 13/12/2018). Tempo de vínculo: 9 meses."
+  linkedin: "https://www.linkedin.com/in/let%C3%ADcia-fonseca-catharino-6a54a2182/"
+
+- name: "Lucca de Souza Mota"
+  activity: "graduação (2017–2019), projeto: PROAES-O2 Tempo de vínculo: 24 meses; graduação (2019–2020), projeto: PROAES-O2 Tempo de vínculo: 9 meses."
+  linkedin: "https://www.linkedin.com/in/lucca-mota/"
+
+- name: "Luiza Helena Ferraz Saraiva Pegoraro"
+  activity: "graduação (2018–2019), projeto: PROAES-O2 Tempo de vínculo: 14 meses."
+
+- name: "Luthiene Alves Dalanhese"
+  activity: "mestrado PPG-PGEB (2015–2017), Tempo de vínculo: 26 meses; doutorado PPG-DOT Bolsista CAPES (2018–2021), projeto: DINAMO - Dinâmica Costeira e Modelagem Oceânica. Tempo de vínculo: 38 meses."
+  linkedin: "https://www.linkedin.com/in/luthienedalanhese/"
+
+- name: "Mariah Valentim Pessanha Rodrigues"
+  activity: "PIBIC (2017–2017), projeto: Edital Ciências do Mar II 43/2013. Tempo de vínculo: 5 meses."
+  linkedin: "https://www.linkedin.com/in/mariah-valentim/"
+
+- name: "Matheus Fernandes Borges Silva de Paiva"
+  activity: "PIBIC (2017–2018), projeto: Bolsa CAPES Ciências do Mar. Tempo de vínculo: 13 meses; mestrado PPG-DOT (2019–2021) Tempo de vínculo: 31 meses."
+  linkedin: "https://www.linkedin.com/in/matheusfbspaiva/"
+
+- name: "Mayara Lins Teixeira"
+  activity: "graduação (2017–2017), Estágio Interno (Voluntário). Tempo de vínculo: 4 meses."
+  linkedin: "https://www.linkedin.com/in/mayara-lins-teixeira-a80381189/"
+
+- name: "Milagros Lizbeth Aliaga Vidal"
+  activity: "mestrado PPG-DOT (2019–2021), Projeto de Oceanografia Operacional no O2. Tempo de vínculo: 24 meses."
+
+- name: "Monique de Faria Marins"
+  activity: "doutorado PPG-DOT (2019–2022). Tempo de vínculo: 34 meses."
+  linkedin: "https://www.linkedin.com/in/monique-marins/"
+
+- name: "Raquel dos Santos Brisson"
+  activity: "PIBIC (2015–2016), Projeto A Dinâmica Oceano-Atmosfera na assinatura da Zona de Convergência do Atlântico Sul e sua influência na variabilidade climática no Estado do Rio de Janeiro. Tempo de vínculo: 6 meses."
+  linkedin: "https://www.linkedin.com/in/raquel-dos-santos-brisson-peixoto-12522010a/"
+
+- name: "Sabrina Valente do Nascimento"
+  activity: "graduação (2018–2019), projeto: PROAES-O2/Agronautas. Tempo de vínculo: 8 meses."
+  linkedin: "https://www.linkedin.com/in/sabrinavalente/"
+
+- name: "Sheila Cristina de Souza Coelho"
+  activity: "mestrado PPG-DOT (2018–2020), Tempo de vínculo: 28 meses."
+  linkedin: "https://www.linkedin.com/in/sheila-cristina-de-souza-coelho-0b8b0a1b0/"
+
+- name: "Thales Lessa Costa"
+  activity: "graduação (2019–2021), IC voluntário. Tempo de vínculo: 26 meses."
+  linkedin: "https://www.linkedin.com/in/thales-lessa-costa-334633129/"
+
+- name: "Thaís Lobato Sarmento"
+  activity: "estagiario (2016–2016), Estágio Curricular 2 (voluntário). Tempo de vínculo: 4 meses; PIBIT (2016–2017), Bolsa de IT (UFF) de Ago/2016 a Jul/2017. Tempo de vínculo: 12 meses; graduação (2017–2018), Voluntária (DIMAS - PIRATA). Tempo de vínculo: 7 meses; mestrado PPG-DOT (2018–2020), Tempo de vínculo: 24 meses."
+  linkedin: "https://www.linkedin.com/in/thais-lobato-sarmento/"
+
+- name: "Thiago Almeida Andrade Pinto"
+  activity: "mestrado PPG-PGEB (2016–2017), projeto: Defendeu em 24/08/2017. Tempo de vínculo: 13 meses."
+
+- name: "Viviane Magalhães Jardim"
+  activity: "graduação (2017–2018), projeto: PROAES-O2. Tempo de vínculo: 11 meses."
+  linkedin: "https://www.linkedin.com/in/viviane-jardim-1901ba106/"
+
+- name: "Wanda Cristina Tavares Fringinio"
+  activity: "graduação (2018–2019), projeto: DINAMO - Dinâmica Costeira e Modelagem Oceânica. Tempo de vínculo: 13 meses."
+  linkedin: "https://www.linkedin.com/in/wandatavares/"
+
+- name: "Yaci Gallo Alvarez"
+  activity: "mestrado PPG-PGEB (2016–2018), Tempo de vínculo: 28 meses; Bolsa Fundação Arthur Bernardes (projeto Rural Sustentável). Bolsista DTI 2018–2018), projeto: Rede Clima. Tempo de vínculo: 4 meses; doutorado PPG-DOT (2018–2019), doutorado sanduiche (2019–2021), projeto: PRINT-CAPES Climate-UFF. Tempo de vínculo: 13 meses."
+  linkedin: "https://www.linkedin.com/in/yaci-gallo-alvarez/"
+
+- name: "Yago de Carlos"
+  activity: "graduação (2019–2020), projeto de Oceanografia Operacional no O2 (cooperação com o Projeto Ressurgência/UFF). Tempo de vínculo: 5 meses."
+  linkedin: "https://www.linkedin.com/in/yago-de-carlos-72374914a/"

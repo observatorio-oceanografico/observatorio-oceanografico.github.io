@@ -1,0 +1,27 @@
+{% comment %}
+  Card de alumni — usado pelas páginas /sobre/alumni/ e /en/about/alumni/.
+  Sem foto/avatar e sem página individual: apenas nome, atuação/período
+  e links externos (Lattes/LinkedIn) quando existirem na fonte histórica.
+
+  Parâmetro:
+    include.person — um registro de site.data.alumni
+{% endcomment %}
+<div class="alumni-card">
+  <p class="alumni-card-name">{{ include.person.name }}</p>
+  {% if include.person.activity %}
+    <p class="alumni-card-activity">{{ include.person.activity }}</p>
+  {% endif %}
+  {% if include.person.lattes or include.person.linkedin %}
+    <p class="alumni-card-links">
+      {% if include.person.lattes %}
+        <a href="{{ include.person.lattes }}" target="_blank" rel="noopener">CNPq Lattes</a>
+      {% endif %}
+      {% if include.person.lattes and include.person.linkedin %}
+        <span class="alumni-card-sep">|</span>
+      {% endif %}
+      {% if include.person.linkedin %}
+        <a href="{{ include.person.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+    </p>
+  {% endif %}
+</div>

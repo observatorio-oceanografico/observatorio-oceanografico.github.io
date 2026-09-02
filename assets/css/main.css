@@ -1570,3 +1570,54 @@ body.internal .content .newsroom-related-heading {
     padding-top: 2rem;
   }
 }
+
+/* =========================================================
+   ALUMNI — /sobre/alumni/ e /en/about/alumni/
+   Lista compacta, sem foto/avatar, visualmente secundária em
+   relação aos cards da equipe ativa (people-beta-*).
+   ========================================================= */
+
+.alumni-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.alumni-card {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.alumni-card-name {
+  margin: 0 0 0.2rem 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.alumni-card-activity {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.alumni-card-links {
+  margin: 0;
+  font-size: 0.78rem;
+}
+
+.alumni-card-sep {
+  margin: 0 0.4em;
+  opacity: 0.4;
+}
+
+@media (max-width: 600px) {
+  .alumni-list {
+    gap: 0.6rem;
+  }
+
+  .alumni-card {
+    padding: 0.6rem 0;
+  }
+}

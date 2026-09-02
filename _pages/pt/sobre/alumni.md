@@ -11,10 +11,16 @@ alt_lang: /en/about/alumni/
 
   <p>
     Ex-integrantes do Observatório Oceanográfico que seguiram outros caminhos
-    acadêmicos ou profissionais.
+    acadêmicos ou profissionais. Os registros abaixo preservam as informações
+    históricas de atuação/período de vínculo tal como constavam na fonte
+    original; dados incompletos (Lattes ou LinkedIn não informados) foram
+    mantidos em branco.
   </p>
 
-  <p class="alumni-status">
-    Esta seção está em desenvolvimento e será atualizada gradualmente.
-  </p>
+  <div class="alumni-list">
+    {% assign alumni = site.data.alumni | sort: "name" %}
+    {% for person in alumni %}
+      {% include alumni-card.html person=person %}
+    {% endfor %}
+  </div>
 </div>
