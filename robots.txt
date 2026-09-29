@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://observatorio-oceanografico.github.io/sitemap.xml
+Sitemap: https://observatoriooceanografico.org/sitemap.xml

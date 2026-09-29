@@ -35,3 +35,10 @@ plugins:
 # (a home vem de _pages/pt/index.md). O arquivo continua versionado e visivel no GitHub.
 exclude:
   - README.md
+  - CONTRIBUTING.md
+  - NEWS-URL-MIGRATION.md
+  - gitattributes
+  - utils/
+  - assets/downloads/README.md
+  - assets/downloads/README_VSCODE.md
+  - assets/downloads/instrucoes-bio-equipe.md
