@@ -30,3 +30,8 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+
+# Exclui o README.md do build: evita que o jekyll-readme-index o publique como "/"
+# (a home vem de _pages/pt/index.md). O arquivo continua versionado e visivel no GitHub.
+exclude:
+  - README.md
