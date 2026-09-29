@@ -6,14 +6,14 @@ permalink: /pessoas/jaqueline-rapagna/
 alt_lang: /people/jaqueline-rapagna/
 
 role: "Coordenadora Pedagógica e de Articulação com a Educação Básica/Cultura Oceânica"
-affiliation: "Secretaria Municipal de Educação, Ciência, Tecnologia, Esporte e Lazer de Arraial do Cabo - SEMECCTEL"
-affiliation_url: "https://www.arraial.rj.gov.br/portalcidadao/sif/profile?id=112"
+affiliation: "Universidade Federal Fluminense - UFF"
+affiliation_url: "https://observatoriooceanografico.org"
 
 avatar: "/assets/img/equipe/jaqueline-rapagna.png"
 
-email: "profjaqueline2020@gmail.com"
+email: "jrapagna@idd.uff.br"
 github: ""
-orcid: ""
+orcid: "0009-0000-7828-1373"
 lattes: "https://lattes.cnpq.br/3309604332269143"
 
 location: "Arraial do Cabo, RJ"

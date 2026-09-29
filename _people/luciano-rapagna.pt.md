@@ -9,7 +9,7 @@ role: "Biólogo · Pesquisador de Pós-doutorado"
 affiliation: "PPG-DOT — Dinâmica dos Oceanos e da Terra"
 affiliation_url: "https://ppgdot-uff.com.br/"
 
-avatar: "/assets/img/equipe/luciano-carvalho-rapagna.png"
+avatar: "/assets/img/equipe/luciano-rapagna.png"
 
 email: "lucianorapagna@id.uff.br"
 orcid: "0000-0002-9009-4463"
