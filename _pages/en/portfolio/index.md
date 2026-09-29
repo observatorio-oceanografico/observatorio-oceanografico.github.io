@@ -12,7 +12,7 @@ The projects presented reflect the Observatory’s main areas of activity, integ
 
 This portfolio aims to provide an organized and accessible overview of the activities carried out by the Oceanographic Observatory, serving as a reference source for students, researchers, journalists, public managers, and potential institutional partners.
 
-{% assign projects = site.projects | where: "lang", "en" % | sort: "order" %}
+{% assign projects = site.projects | where: "lang", "en" | sort: "order" %}
 
 <div class="project-list">
   {% for project in projects %}

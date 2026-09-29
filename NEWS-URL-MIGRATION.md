@@ -147,6 +147,12 @@ antes da migração (`git archive HEAD`).
   layout `home` inexistente em `index.md`, e 3 conflitos de destino
   envolvendo `_resources/`/`_pages/*/recursos`) — nenhum é novo, nenhum
   é relacionado a notícias.
+
+> **Nota (set/2026):** os avisos acima foram resolvidos depois desta validação
+> (erro Liquid dos portfólios, `index.md` da raiz com layout `home` e stubs
+> duplicados de recursos removidos). O build e a publicação passaram a ser feitos
+> apenas pelo GitHub Pages; o build local em Docker não é mais usado.
+
 - **13 URLs novas** confirmadas na saída do build, incluindo os 4 casos
   pedidos: 2 notícias PT, 1 EN, 1 antiga sem `categories`
   (`ayemboe_silas`), 1 recente com `categories`

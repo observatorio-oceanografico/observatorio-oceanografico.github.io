@@ -1,0 +1,7 @@
+# Caches e artefatos de build do Jekyll / Sass
+.jekyll-cache/
+.sass-cache/
+.jekyll-metadata
+
+# Saida do build do GitHub Pages (gerada na publicacao; nao versionar)
+/_site/
